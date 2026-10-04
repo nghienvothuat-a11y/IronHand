@@ -1,0 +1,112 @@
+{
+  "all_vertices_have_one_rigid_weight": {
+    "pass": true,
+    "detail": null
+  },
+  "weights_reference_existing_deform_bones": {
+    "pass": true,
+    "detail": null
+  },
+  "no_face_spans_multiple_bones": {
+    "pass": true,
+    "detail": null
+  },
+  "single_material": {
+    "pass": true,
+    "detail": null
+  },
+  "uv_exists": {
+    "pass": true,
+    "detail": null
+  },
+  "23_bones": {
+    "pass": true,
+    "detail": 23
+  },
+  "all_drivers_valid": {
+    "pass": true,
+    "detail": null
+  },
+  "fractional_controls_preserved": {
+    "pass": true,
+    "detail": {
+      "thumb_curl": 0.550000011920929,
+      "thumb_opposition": 0.800000011920929
+    }
+  },
+  "all_pose_vertices_finite": {
+    "pass": true,
+    "detail": null
+  },
+  "fist_preserves_rigid_panel_edge_lengths": {
+    "pass": true,
+    "detail": {
+      "max_error_m": 2.7668243954628857e-08
+    }
+  },
+  "index_control_moves_only_index": {
+    "pass": true,
+    "detail": {
+      "index_max_m": 0.19354296031280097,
+      "other_max_m": 0
+    }
+  },
+  "metre_scale": {
+    "pass": true,
+    "detail": {
+      "height_m": 0.27986325323581696
+    }
+  },
+  "muzzle_aligned_to_palm": {
+    "pass": true,
+    "detail": {
+      "position_m": [
+        0.002240000059828162,
+        -0.04255999997258186,
+        0.06440000236034393
+      ],
+      "expected_m": [
+        0.002240000059828162,
+        -0.04255999997258186,
+        0.06440000236034393
+      ]
+    }
+  },
+  "stats": {
+    "vertices": 7838,
+    "faces": 8110,
+    "triangles": 14470,
+    "bones": 23,
+    "materials": 1,
+    "height_m": 0.27986325323581696
+  },
+  "glb_contains_skin_and_animation": {
+    "pass": true,
+    "detail": null
+  },
+  "glb_images_embedded": {
+    "pass": true,
+    "detail": null
+  },
+  "fbx_skin_and_bones": {
+    "pass": true,
+    "detail": null
+  },
+  "fbx_has_baked_action": {
+    "pass": true,
+    "detail": null
+  },
+  "fbx_baked_fist_moves_finger": {
+    "pass": true,
+    "detail": {
+      "matrix_delta": 5.880117693175276
+    }
+  },
+  "status": "pass",
+  "failures": [],
+  "limitations": [
+    "Not validated in Unity or on iPhone.",
+    "Prototype palette UVs; no baked normal map.",
+    "Joint placement fitted visually to the generated mesh; live hand alignment remains to be calibrated."
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "units": "metres",
+  "handedness": "Right",
+  "source_height_m": 0.28,
+  "rest_wrist_origin": [
+    0,
+    0,
+    0
+  ],
+  "blender_fingers_axis": "+Z",
+  "blender_palm_normal": "-Y",
+  "landmark_mapping": {
+    "0": {
+      "bone": "Hand.R",
+      "point": "head"
+    },
+    "1": {
+      "bone": "Thumb.01.R",
+      "point": "head"
+    },
+    "2": {
+      "bone": "Thumb.02.R",
+      "point": "head"
+    },
+    "3": {
+      "bone": "Thumb.03.R",
+      "point": "head"
+    },
+    "4": {
+      "bone": "Thumb.Tip.R",
+      "point": "head"
+    },
+    "5": {
+      "bone": "Index.01.R",
+      "point": "head"
+    },
+    "6": {
+      "bone": "Index.02.R",
+      "point": "head"
+    },
+    "7": {
+      "bone": "Index.03.R",
+      "point": "head"
+    },
+    "8": {
+      "bone": "Index.Tip.R",
+      "point": "head"
+    },
+    "9": {
+      "bone": "Middle.01.R",
+      "point": "head"
+    },
+    "10": {
+      "bone": "Middle.02.R",
+      "point": "head"
+    },
+    "11": {
+      "bone": "Middle.03.R",
+      "point": "head"
+    },
+    "12": {
+      "bone": "Middle.Tip.R",
+      "point": "head"
+    },
+    "13": {
+      "bone": "Ring.01.R",
+      "point": "head"
+    },
+    "14": {
+      "bone": "Ring.02.R",
+      "point": "head"
+    },
+    "15": {
+      "bone": "Ring.03.R",
+      "point": "head"
+    },
+    "16": {
+      "bone": "Ring.Tip.R",
+      "point": "head"
+    },
+    "17": {
+      "bone": "Little.01.R",
+      "point": "head"
+    },
+    "18": {
+      "bone": "Little.02.R",
+      "point": "head"
+    },
+    "19": {
+      "bone": "Little.03.R",
+      "point": "head"
+    },
+    "20": {
+      "bone": "Little.Tip.R",
+      "point": "head"
+    }
+  },
+  "muzzle": "Palm_Muzzle",
+  "controls": [
+    "thumb_curl",
+    "index_curl",
+    "middle_curl",
+    "ring_curl",
+    "little_curl",
+    "thumb_opposition",
+    "wrist_pitch",
+    "wrist_yaw"
+  ],
+  "poses": {
+    "Open": {},
+    "Relaxed": {
+      "thumb_curl": 0.16,
+      "index_curl": 0.16,
+      "middle_curl": 0.19,
+      "ring_curl": 0.22,
+      "little_curl": 0.25,
+      "thumb_opposition": 0.12
+    },
+    "Fist": {
+      "thumb_curl": 0.5,
+      "index_curl": 1,
+      "middle_curl": 1,
+      "ring_curl": 1,
+      "little_curl": 1,
+      "thumb_opposition": 0.55
+    },
+    "Index_Curl": {
+      "index_curl": 1
+    },
+    "Pinch": {
+      "thumb_curl": 0.55,
+      "index_curl": 1,
+      "thumb_opposition": 0.8
+    }
+  },
+  "status": "Blender prototype; Unity and live camera tracking not tested",
+  "normal_map": false,
+  "uv_layout": "shared palette swatches",
+  "rig_method": "Rigid per-panel skinning; cut boundaries duplicated by deform bone"
+}

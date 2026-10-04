@@ -1,0 +1,37 @@
+# Local operating-system and Python files
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Credentials and local tool configuration
+.env
+.env.*
+!.env.example
+.tripo/
+.codex/
+
+# Temporary renders, logs, Blender backups, and packaged duplicates
+/tmp/
+*.log
+*.blend[0-9]*
+/assets/*_Prototype_Asset.zip
+/art/blender/source_vertices.json
+
+# Downloaded third-party installers/source and machine-specific MCP diagnostics
+/tools/mcp-setup/blender_addon.py
+/tools/mcp-setup/tripo_server.py
+/tools/mcp-setup/install_uv.sh
+/tools/mcp-setup/tripo-cli-README.md
+/tools/mcp-setup/connection-report.json
+
+# Unity-generated files, when the mobile project is added
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Bb]uild/
+[Bb]uilds/
+node_modules/

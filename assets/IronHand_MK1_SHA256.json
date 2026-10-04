@@ -1,0 +1,19 @@
+{
+  "art/blender/IronHand_MK1_Rigged.blend": "37aa7020f332b61eb0d7267a592e09f693b890f5c7c69ba5e52808f41b862ae3",
+  "art/blender/README.txt": "ed228c8486de1a28746c4bf11f71dede52825f5fbc5826f80dcfa26a011b8fa3",
+  "art/blender/rig-validation.json": "1a41104f4fd6b709ff9e1ccbf23b59f8d280707e0a23888cb67a67e1dc08774f",
+  "assets/source/IronHand_MK1_Tripo_Source.fbx": "8d028e1510c72d963bf75873a7f2bcdb0ad40e56e6ebabbb5b431364142bf662",
+  "docs/tripo-first-asset.json": "dff802b8e8b9849ac9381ee86fa7907d270b7bf42cbd0550d0363d9717949986",
+  "tools/build_hand_rig.py": "0f1fdd7de539446ae73fa35fd731cfd4b5a89d5d2af6d9c97bd20a07f7e226c8",
+  "tools/validate_hand_rig.py": "7982cae21519fb5295a67bce3a634f90f2415f4d83a0c8ec1ad69428db6e9ab8",
+  "assets/exports/IronHand_MK1_Rigged.fbx": "67a2b356000a7e33becb1c31c870e6e61d8a6a5bbf94039ab9982fa06533315e",
+  "assets/exports/IronHand_MK1_RigContract.json": "3adbd4b23c8f2a3ecca7ba5b8e9e185ed9715badb5cf53628983da3311172102",
+  "assets/exports/IronHand_MK1_Rigged.glb": "548c89c0c806a571afdad7485900b11efe20eaa43f4406dc6c8450a100afd2f9",
+  "assets/exports/Textures/IronHand_MK1_ORM.png": "ec8aae3694011991a27aff13b0f36cef7caf832429c7270fc4a4b55f0e432536",
+  "assets/exports/Textures/IronHand_MK1_Emission.png": "b79a27fade7c8f4d1da658ec68b7eecda8a88da9cbf883b647eb8359c0224161",
+  "assets/exports/Textures/IronHand_MK1_BaseColor.png": "8c504cb72827adb435d58fe507331fecb03180e3e1b061da3868a02d49ab41f1",
+  "art/previews/IronHand_MK1_pinch.png": "7e801731f2438ca43be5a287a556b1eae717fcd3c4c2205333443cafe9185acc",
+  "art/previews/IronHand_MK1_fist.png": "90770797bdef5529a3631728fabcaeed8731cb9d22d7fda9b51b4fcb38808069",
+  "art/previews/IronHand_MK1_open.png": "5f7a3f2e34486713bc5305645b11caea16fb8ec35a767a8f7b17a793af3c2a35",
+  "art/previews/IronHand_MK1_index-curl.png": "b724a95f6bb71c20e6e8a9134f105e2f0be0061c247cff4e30ea73eb1d645891"
+}

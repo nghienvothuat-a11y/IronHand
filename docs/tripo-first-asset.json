@@ -1,0 +1,46 @@
+{
+  "asset_id": "IronHand_MK1_Prototype_Rig",
+  "created_on": "2026-10-04",
+  "target_device": "iPhone 13 Pro Max",
+  "service": "Tripo Studio",
+  "model": "Smart Mesh P2.0",
+  "task_id": "56f4080d-c961-4023-9d9c-b53baca28ca2",
+  "studio_url": "https://studio.tripo3d.ai/workspace/generate/56f4080d-c961-4023-9d9c-b53baca28ca2",
+  "status": "exported_and_rigged_in_blender",
+  "generation_cost": "One free Smart Mesh trial; displayed credit balance remained 200.",
+  "reported_topology": "Quad",
+  "reported_faces": 6169,
+  "reported_vertices": 5430,
+  "triangle_count": null,
+  "exported": true,
+  "export_blocker": null,
+  "textured": true,
+  "rigged": true,
+  "unity_tested": false,
+  "prompt": "A single anatomically correct RIGHT robotic armored hand with a short forearm cuff, isolated object, original sci-fi industrial design for the mobile AR game IronHand. Exactly five fully separated fingers, open relaxed palm, fingers straight and slightly spread, opposable thumb angled outward. Adult human hand proportions. Both palm and back fully modeled. Segmented hard-surface armor with clear finger joints and small dark flexible gaps; individual rigid phalange plates suitable for later manual skeletal rigging. Brushed gunmetal steel, matte graphite, restrained copper trim, small cyan energy emitter centered in the palm. Compact cuff ending halfway along the forearm. Clean readable shapes, moderate mechanical detail, no spikes. No body, no second hand, no human skin, no weapon held, no base, no background, no text or logos. PBR game asset, clean topology, consistent thickness.",
+  "visual_review": "Inspected source front/back/side and rendered open/fist/index-curl/pinch prototype poses. Rigid mechanical segmentation, joint bearings, palette materials and palm emitter added. AI armour edges and joint intersections need further polish.",
+  "next_steps": [
+    "Import FBX into Unity and configure the chosen URP material.",
+    "Implement hand landmark retargeting and calibrate scale, bone axes and palm alignment.",
+    "Test occlusion, tracking latency and sustained FPS on the iPhone 13 Pro Max.",
+    "Refine armour seams and self-intersections based on live poses."
+  ],
+  "user_upgraded_account": true,
+  "source_triangle_count": 10328,
+  "assistant_purchased_subscription": false,
+  "source_export": "assets/source/IronHand_MK1_Tripo_Source.fbx",
+  "blender_file": "art/blender/IronHand_MK1_Rigged.blend",
+  "exports": [
+    "assets/exports/IronHand_MK1_Rigged.fbx",
+    "assets/exports/IronHand_MK1_Rigged.glb"
+  ],
+  "texture_provenance": "256x256 shared palette UV and BaseColor/ORM/Emission maps authored in Blender; source FBX had no UV or textures.",
+  "rig_stats": {
+    "vertices": 7838,
+    "triangles": 14470,
+    "bones_total": 23,
+    "materials": 1,
+    "height_m": 0.27986325
+  },
+  "validation_report": "art/blender/rig-validation.json"
+}
