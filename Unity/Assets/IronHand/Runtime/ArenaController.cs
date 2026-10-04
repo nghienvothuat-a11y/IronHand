@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using Unity.XR.CoreUtils;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.XR;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
@@ -13,6 +16,8 @@ namespace IronHand
         public bool IsPlaced => Root;
         public bool Tracking => !IsDevice || (ARSession.state==ARSessionState.SessionTracking && (!anchor || anchor.trackingState==TrackingState.Tracking));
         public bool CanPlace {get;private set;}
+        public int PlaneCount => planes?planes.trackables.count:0;
+        public string PlaneMode => planes?planes.currentDetectionMode.ToString():"Simulation";
         public string Status {get;private set;}="INITIALIZING";
         public Camera Camera {get;private set;}
         public Transform Root {get;private set;}
@@ -26,36 +31,63 @@ namespace IronHand
         ARRaycastHit hit;
         readonly List<ARRaycastHit> hits=new List<ARRaycastHit>();
         GameObject marker;
+#if UNITY_IOS && !UNITY_EDITOR
+        [DllImport("__Internal")] static extern int IH_CameraAuthorization();
+        [DllImport("__Internal")] static extern void IH_RequestCamera();
+#endif
         public void Initialize()
         {
             IsDevice=Application.platform==RuntimePlatform.IPhonePlayer;
             var originGO=new GameObject("XR Origin");originGO.SetActive(false);var origin=originGO.AddComponent<XROrigin>();
-            var offset=new GameObject("Camera Offset");offset.transform.SetParent(originGO.transform,false);origin.CameraFloorOffsetObject=offset;
+            var offset=new GameObject("Camera Offset");offset.transform.SetParent(originGO.transform,false);origin.CameraFloorOffsetObject=offset;origin.CameraYOffset=0;
             var cameraGO=new GameObject("AR Camera");cameraGO.transform.SetParent(offset.transform,false);
             Camera=cameraGO.AddComponent<Camera>();Camera.tag="MainCamera";Camera.nearClipPlane=.03f;Camera.farClipPlane=30;Camera.fieldOfView=58;
             Camera.backgroundColor=new Color(.018f,.03f,.048f);Camera.clearFlags=CameraClearFlags.SolidColor;origin.Camera=Camera;
-            cameraGO.AddComponent<AudioListener>();originGO.SetActive(true);
+            cameraGO.AddComponent<AudioListener>();
             if(IsDevice)
             {
                 var sessionGO=new GameObject("AR Session");sessionGO.SetActive(false);
                 session=sessionGO.AddComponent<ARSession>();session.enabled=false;session.matchFrameRateRequested=false;
                 sessionGO.AddComponent<ARInputManager>();sessionGO.SetActive(true);
                 ARSession.stateChanged+=OnSessionState;
-                cameraGO.AddComponent<ARPoseDriver>();
+                // Bind before activation. The legacy ARPoseDriver can miss the device
+                // if its first connection precedes the first valid AR camera pose.
+                var pose=cameraGO.AddComponent<TrackedPoseDriver>();
+                var position=new InputAction("AR position",binding:"<XRHMD>/centerEyePosition",expectedControlType:"Vector3");
+                position.AddBinding("<HandheldARInputDevice>/devicePosition");
+                var rotation=new InputAction("AR rotation",binding:"<XRHMD>/centerEyeRotation",expectedControlType:"Quaternion");
+                rotation.AddBinding("<HandheldARInputDevice>/deviceRotation");
+                // HandheldARInputDevice exposes position/rotation, no trackingState
+                // control. ARSession.state gates placement and combat separately.
+                pose.positionInput=new InputActionProperty(position);pose.rotationInput=new InputActionProperty(rotation);
                 var cm=cameraGO.AddComponent<ARCameraManager>();cm.requestedFacingDirection=CameraFacingDirection.World;
                 cameraGO.AddComponent<ARCameraBackground>();
                 planes=originGO.AddComponent<ARPlaneManager>();planes.requestedDetectionMode=PlaneDetectionMode.Horizontal;
                 rays=originGO.AddComponent<ARRaycastManager>();anchors=originGO.AddComponent<ARAnchorManager>();
-                var vision=cameraGO.AddComponent<VisionHandProvider>();vision.enabled=false;vision.cameraManager=cm;vision.enabled=true;Hands=vision;
+                var vision=cameraGO.AddComponent<VisionHandProvider>();vision.enabled=false;vision.cameraManager=cm;Hands=vision;
+                originGO.SetActive(true);
                 StartCoroutine(StartAR());
             }
-            else {Camera.transform.position=new Vector3(0,1.25f,0);Hands=new SimulatedHand();Status="DESKTOP SIMULATION";CanPlace=true;CreateHangar();}
+            else {originGO.SetActive(true);Camera.transform.position=new Vector3(0,1.25f,0);Hands=new SimulatedHand();Status="DESKTOP SIMULATION";CanPlace=true;CreateHangar();}
         }
         IEnumerator StartAR()
         {
             Status="REQUESTING CAMERA PERMISSION";
-            yield return Application.RequestUserAuthorization(UserAuthorization.WebCam);
-            bool authorized=Application.HasUserAuthorization(UserAuthorization.WebCam);
+            // Request AVFoundation directly: this app has no WebCamTexture, so the
+            // Unity webcam engine module may be stripped from an IL2CPP player.
+#if UNITY_IOS && !UNITY_EDITOR
+            int authorization=IH_CameraAuthorization();
+            Debug.Log("IRONHAND_AR initial_camera_authorization="+authorization);
+            if(authorization==0)
+            {
+                IH_RequestCamera();
+                while((authorization=IH_CameraAuthorization())==0)yield return null;
+            }
+            bool authorized=authorization==3;
+#else
+            bool authorized=true;
+            yield return null;
+#endif
             Debug.Log("IRONHAND_AR camera_authorized="+authorized);
             if(!authorized){Status="CAMERA DENIED — enable in iOS Settings";yield break;}
             Status="CHECKING AR AVAILABILITY";
@@ -64,6 +96,8 @@ namespace IronHand
             if(ARSession.state==ARSessionState.Unsupported){Status="AR NOT SUPPORTED";yield break;}
             session.enabled=true;Status="Move phone slowly to find a floor";
         }
+        public void OpenCameraSettings(){if(IsDevice)Application.OpenURL("app-settings:");}
+        public void SetHandTracking(bool active){if(Hands is VisionHandProvider vision&&vision.enabled!=active)vision.enabled=active;}
         void OnSessionState(ARSessionStateChangedEventArgs args){Debug.Log("IRONHAND_AR state="+args.state+" reason="+ARSession.notTrackingReason);}
         void OnDestroy(){if(IsDevice)ARSession.stateChanged-=OnSessionState;}
         public void Tick()
@@ -72,15 +106,16 @@ namespace IronHand
             if(!IsDevice)return;
             if(IsPlaced){Status=Tracking?"WORLD TRACKING":"TRACKING INTERRUPTED";return;}
             CanPlace=false;
-            if(!Tracking)return;
-            if(rays.Raycast(new Vector2(Screen.width*.5f,Screen.height*.38f),hits,TrackableType.PlaneWithinPolygon))
+            if(!Tracking){if(marker)marker.SetActive(false);return;}
+            // The visible reticle and the placement ray must use the same point.
+            if(rays.Raycast(Camera.ViewportPointToRay(new Vector3(.5f,.5f,0)),hits,TrackableType.PlaneWithinPolygon))
             {
                 hit=hits[0];CanPlace=hit.distance>=1.0f && hit.distance<=3.5f;
                 Status=CanPlace?"Floor found · confirm a clear play area":"Aim at a clear floor 1–3 m away";
                 if(!marker){marker=GameObject.CreatePrimitive(PrimitiveType.Cylinder);Destroy(marker.GetComponent<Collider>());marker.name="Arena placement marker";marker.GetComponent<Renderer>().material=Visuals.Material(new Color(.05f,.8f,.9f),true);}
                 marker.SetActive(CanPlace);marker.transform.position=hit.pose.position;marker.transform.localScale=new Vector3(.6f,.002f,.6f);
             }
-            else {Status="Move phone slowly · find a textured floor";if(marker)marker.SetActive(false);}
+            else {Status=PlaneCount==0?"Scan the floor slowly · keep your hand out of view":"Aim the center + at the floor · 1–3 m ahead";if(marker)marker.SetActive(false);}
         }
         public bool Place()
         {

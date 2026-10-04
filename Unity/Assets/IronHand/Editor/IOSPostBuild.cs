@@ -12,7 +12,7 @@ public static class IOSPostBuild
         if(target!=BuildTarget.iOS)return;
         string projectPath=PBXProject.GetPBXProjectPath(path);var project=new PBXProject();project.ReadFromFile(projectPath);
         string framework=project.GetUnityFrameworkTargetGuid();
-        foreach(var name in new[]{"Vision.framework","CoreGraphics.framework","QuartzCore.framework","UIKit.framework"})project.AddFrameworkToProject(framework,name,false);
+        foreach(var name in new[]{"Vision.framework","CoreGraphics.framework","QuartzCore.framework","UIKit.framework","AVFoundation.framework"})project.AddFrameworkToProject(framework,name,false);
         string file=project.FindFileGuidByProjectPath("Libraries/IronHand/Plugins/iOS/IronHandVision.mm");
         if(!string.IsNullOrEmpty(file))project.SetCompileFlagsForFile(framework,file,new System.Collections.Generic.List<string>{"-fobjc-arc"});
         project.SetBuildProperty(framework,"CLANG_CXX_LANGUAGE_STANDARD","c++17");project.WriteToFile(projectPath);

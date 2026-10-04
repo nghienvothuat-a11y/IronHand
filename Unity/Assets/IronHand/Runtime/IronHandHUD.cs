@@ -9,6 +9,7 @@ namespace IronHand
         static readonly Color Cyan=new Color(.28f,.92f,.96f),Ink=new Color(.027f,.058f,.083f,.96f),Muted=new Color(.51f,.64f,.69f),White=new Color(.9f,.95f,.96f);
         IronHandGame game;Font font;Sprite barSprite;RectTransform root,panel;Text status,wallet,hint,health,mana,wave,debug,calibration,centerMessage;Image healthFill,manaFill,damage,scanFill;
         GamePhase drawn=(GamePhase)(-1);bool dirty;float damageAlpha;
+        Button placementButton;Text placementButtonLabel;
         public void Initialize(IronHandGame value)
         {
             game=value;font=Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
@@ -49,10 +50,16 @@ namespace IronHand
             mana.text=$"ENERGY        {game.Mana:0} / {game.MaxMana}";manaFill.fillAmount=game.Mana/game.MaxMana;
             wave.text=game.Wave>0?$"WAVE  {game.Wave:00} / 05\n<size=16>{Mathf.CeilToInt(Mathf.Max(0,game.Clock))}s   ·   {game.AliveCount} HOSTILES</size>":"";
             hint.text=game.Arena.IsDevice?"OPEN PALM TO FIRE   ·   CLOSE HAND TO RECHARGE   ·   AIM WITH YOUR PHONE":"SIMULATION   /   ENTER: CONTINUE   ·   HOLD SPACE: FIRE   ·   RIGHT DRAG: AIM   ·   H: LOSE HAND   ·   T: LOSE AR   ·   L: SWITCH HAND";
+            if(game.Phase==GamePhase.Placement)hint.text="";
             var f=game.Arena.Hands.Frame;
             debug.text=game.Diagnostics?$"{game.FPS:0} FPS  /  {Time.unscaledDeltaTime*1000:0.0} ms frame\nPOSE AGE {(Time.realtimeSinceStartupAsDouble-f.capturedAt)*1000:0} ms  /  VISION {f.inferenceMs:0} ms\n{game.Arena.Hands.Status}  ·  OPEN {f.openness:P0}\n{game.Progress.SaveError ?? "SAVE OK"}":"";
             if(calibration){calibration.text=$"{game.Calibration*100:00}%   /   "+game.Arena.Hands.Status;scanFill.fillAmount=game.Calibration;}
-            if(centerMessage&&game.Phase==GamePhase.Placement)centerMessage.text=game.Arena.Status;
+            if(centerMessage&&game.Phase==GamePhase.Placement)
+            {
+                centerMessage.text=game.Arena.Status;
+                placementButton.interactable=game.Arena.CanPlace;
+                placementButtonLabel.text=game.Arena.CanPlace?"CONFIRM CLEAR AREA  →":"FINDING FLOOR…";
+            }
             if(centerMessage&&game.Phase==GamePhase.Paused)centerMessage.text=game.TrackingOK?$"Ready · recovering {game.ResumeCountdown:0.0}s\nTap RESUME for a manual pause.":"Tracking interrupted. Hold the phone steady.\nCombat and damage are paused.";
             if(centerMessage&&game.Phase==GamePhase.Intermission)centerMessage.text=$"NEXT WAVE IN {Mathf.CeilToInt(game.Clock)}\nLower your hand and rest.";
             damageAlpha=Mathf.MoveTowards(damageAlpha,0,Time.unscaledDeltaTime*1.4f);damage.color=new Color(.9f,.08f,.03f,damageAlpha);
@@ -60,7 +67,7 @@ namespace IronHand
         public void FlashDamage(){damageAlpha=.24f;}
         void DrawPanel()
         {
-            foreach(Transform child in panel)Destroy(child.gameObject);calibration=null;scanFill=null;centerMessage=null;
+            foreach(Transform child in panel)Destroy(child.gameObject);calibration=null;scanFill=null;centerMessage=null;placementButton=null;placementButtonLabel=null;
             switch(game.Phase)
             {
                 case GamePhase.Home:
@@ -71,12 +78,16 @@ namespace IronHand
                     Button(panel,"WORKSHOP",new Vector2(550,-768),new Vector2(260,80),game.Workshop,false);
                     Label(panel,game.Armor.code+"   /   "+game.Armor.name,26,new Vector2(-530,-795),new Vector2(430,60),Cyan,new Vector2(1,1));break;
                 case GamePhase.Placement:
-                    Modal("ESTABLISH YOUR ARENA","Point at a clear floor 1–3 m ahead.\nMove slowly until the floor is detected.");
-                    centerMessage=Label(panel,game.Arena.Status,24,new Vector2(480,-535),new Vector2(1100,70),Cyan);
-                    Button(panel,"CONFIRM CLEAR AREA",new Vector2(480,-650),new Vector2(530,76),game.ConfirmArea,true);
-                    Button(panel,"BACK",new Vector2(1040,-650),new Vector2(210,76),game.BackHome,false);break;
+                    var sheet=Box(panel,Vector2.zero,Vector2.right,Vector2.zero,new Vector2(0,265),Ink,new Vector2(.5f,0)).rectTransform;
+                    Label(sheet,"STEP 1 / 2  ·  PLACE YOUR ARENA",28,new Vector2(48,-24),new Vector2(1000,45),White);
+                    centerMessage=Label(sheet,game.Arena.Status,24,new Vector2(48,-82),new Vector2(1030,62),Cyan);
+                    Label(sheet,"Point the center + at a clear floor 1–3 m ahead.\nConfirm the cyan marker first. Hand scanning comes next.",21,new Vector2(48,-164),new Vector2(1030,74),Muted);
+                    placementButton=Button(sheet,"FINDING FLOOR…",new Vector2(-490,-40),new Vector2(440,78),game.ConfirmArea,true,new Vector2(1,1));
+                    placementButtonLabel=placementButton.GetComponentInChildren<Text>();placementButton.interactable=game.Arena.CanPlace;
+                    Button(sheet,"BACK",new Vector2(-490,-152),new Vector2(180,65),game.BackHome,false,new Vector2(1,1));
+                    if(game.Arena.IsDevice)Button(sheet,"SETTINGS",new Vector2(-280,-152),new Vector2(230,65),game.Arena.OpenCameraSettings,false,new Vector2(1,1));break;
                 case GamePhase.Calibration:
-                    Label(panel,"SYNC YOUR HAND",42,new Vector2(430,-295),new Vector2(1100,80),White);
+                    Label(panel,"STEP 2 / 2  ·  SYNC YOUR HAND",36,new Vector2(430,-295),new Vector2(1100,80),White);
                     Label(panel,"Show your entire OPEN hand. Hold it steady for 3 seconds.\nKeep your wrist and all fingertips inside the camera view.",23,new Vector2(430,-395),new Vector2(1080,100),Muted);
                     calibration=Label(panel,"",25,new Vector2(430,-555),new Vector2(900,70),Cyan);scanFill=Bar(panel,new Vector2(430,-635),new Vector2(650,12),Cyan);
                     Button(panel,"SWITCH LEFT / RIGHT",new Vector2(430,-710),new Vector2(390,66),game.ToggleHand,false);

@@ -79,11 +79,11 @@ namespace IronHand
         [DllImport("__Internal")] static extern int IH_Poll([Out]float[] xyz,out double capture,out double elapsed,out int handedness);
         [DllImport("__Internal")] static extern void IH_Reset();
 #endif
-        void OnEnable(){if(cameraManager)cameraManager.frameReceived+=OnFrame;}
+        void OnEnable(){Status="WAITING FOR HAND";if(cameraManager)cameraManager.frameReceived+=OnFrame;}
         void OnDisable()
         {
             if(cameraManager)cameraManager.frameReceived-=OnFrame;
-            if(converting)conversion.Dispose();converting=false;pending=false;Frame.valid=false;
+            if(converting)conversion.Dispose();converting=false;pending=false;Frame.valid=false;Status="HAND SCAN STARTS AFTER AREA CONFIRMATION";
 #if UNITY_IOS && !UNITY_EDITOR
             IH_Reset();
 #endif

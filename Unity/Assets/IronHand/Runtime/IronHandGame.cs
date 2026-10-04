@@ -89,6 +89,7 @@ namespace IronHand
             }
             if(Input.GetKeyDown(KeyCode.Return)){if(Phase==GamePhase.Home)StartSetup();else if(Phase==GamePhase.Placement)ConfirmArea();else if(Phase==GamePhase.Ready)StartRun();}
             if(Input.GetKeyDown(KeyCode.Escape))PauseOrResume();
+            Arena.SetHandTracking(Phase==GamePhase.Calibration||Phase==GamePhase.Ready||Phase==GamePhase.Combat||Phase==GamePhase.Intermission);
             Arena.Tick();var frame=Arena.Hands.Frame;
             if(UseHandOverride)frame.left=HandLeftOverride;
             bool showcase=Phase==GamePhase.Home||Phase==GamePhase.Workshop||Phase==GamePhase.Results;
@@ -245,12 +246,13 @@ namespace IronHand
             string folder=Path.Combine(directory,"diagnostics");Directory.CreateDirectory(folder);
             writer=new StreamWriter(Path.Combine(folder,DateTime.UtcNow.ToString("yyyyMMdd-HHmmss")+".csv"));
             writer.WriteLine("# Unity="+Application.unityVersion+";OS="+SystemInfo.operatingSystem+";device="+SystemInfo.deviceModel+";provider=AppleVision2D-or-simulation");
-            writer.WriteLine("seconds,fps,frame_ms,pose_age_ms,inference_ms,hand_valid,world_tracking,phase,wave,enemies,hp,mana,gold,arena_status,hand_status");
+            writer.WriteLine("seconds,fps,frame_ms,pose_age_ms,inference_ms,hand_valid,world_tracking,phase,wave,enemies,hp,mana,gold,arena_status,hand_status,planes,plane_mode,camera_x,camera_y,camera_z,camera_pitch,can_place,calibration");
         }
         public void Tick(float dt,IronHandGame g,HandFrame f)
         {
             elapsed+=dt;if(elapsed<.25f)return;elapsed=0;
-            writer.WriteLine(string.Format(System.Globalization.CultureInfo.InvariantCulture,"{0:F3},{1:F1},{2:F1},{3:F1},{4:F1},{5},{6},{7},{8},{9},{10:F0},{11:F0},{12},{13},{14}",Time.realtimeSinceStartupAsDouble,g.FPS,Time.unscaledDeltaTime*1000,(Time.realtimeSinceStartupAsDouble-f.capturedAt)*1000,f.inferenceMs,f.Fresh(Time.realtimeSinceStartupAsDouble),g.TrackingOK,g.Phase,g.Wave,g.AliveCount,g.HP,g.Mana,g.Progress.Data.gold,g.Arena.Status.Replace(',',';'),g.Arena.Hands.Status.Replace(',',';')));writer.Flush();
+            var camera=g.Arena.Camera.transform;
+            writer.WriteLine(string.Format(System.Globalization.CultureInfo.InvariantCulture,"{0:F3},{1:F1},{2:F1},{3:F1},{4:F1},{5},{6},{7},{8},{9},{10:F0},{11:F0},{12},{13},{14},{15},{16},{17:F3},{18:F3},{19:F3},{20:F1},{21},{22:F2}",Time.realtimeSinceStartupAsDouble,g.FPS,Time.unscaledDeltaTime*1000,(Time.realtimeSinceStartupAsDouble-f.capturedAt)*1000,f.inferenceMs,f.Fresh(Time.realtimeSinceStartupAsDouble),g.TrackingOK,g.Phase,g.Wave,g.AliveCount,g.HP,g.Mana,g.Progress.Data.gold,g.Arena.Status.Replace(',',';'),g.Arena.Hands.Status.Replace(',',';'),g.Arena.PlaneCount,g.Arena.PlaneMode.Replace(',',';'),camera.position.x,camera.position.y,camera.position.z,camera.eulerAngles.x,g.Arena.CanPlace,g.Calibration));writer.Flush();
         }
         public void Dispose()=>writer?.Dispose();
     }

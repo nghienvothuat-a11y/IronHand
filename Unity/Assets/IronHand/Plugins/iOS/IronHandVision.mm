@@ -2,6 +2,7 @@
 #import <Vision/Vision.h>
 #import <CoreGraphics/CoreGraphics.h>
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 #include <mutex>
 #include <atomic>
 #include <cstring>
@@ -17,6 +18,12 @@ dispatch_queue_t queue() {
     static dispatch_queue_t q = dispatch_queue_create("com.ironhand.vision", DISPATCH_QUEUE_SERIAL);
     return q;
 }
+}
+extern "C" int IH_CameraAuthorization(){return (int)[AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];}
+extern "C" void IH_RequestCamera(){
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted){}];
+    });
 }
 extern "C" int IH_Submit(const void* rgba,int width,int height,double capture) {
     if(!rgba || width<1 || height<1 || width>2048 || height>2048 || busy.exchange(true))return 0;

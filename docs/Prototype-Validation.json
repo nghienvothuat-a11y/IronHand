@@ -22,14 +22,33 @@
       "ui_raycast_passed": true
     },
     "ios_export": "passed; native ARKit archive and registration source verified",
-    "ios_install": "ARKit and diagnostics build installed on iPhone 13 Pro Max; initial launch verified. Native ARKit loads and missing-collider errors are resolved.",
-    "mac_ui": "Home, calibration and combat rendered; HUD raycast and DEPLOY callback passed in smoke test.",
+    "ios_install": "Camera/placement fix signed and installed on iPhone 13 Pro Max. Launch attempt blocked by locked device; awaiting physical floor-placement retest.",
+    "mac_ui": "Placement bottom sheet visually verified: center unobstructed, confirmation visible. Home/calibration/combat and DEPLOY UI raycast passed.",
     "ios_native_packaging": "Verified libUnityARKit.a, UnityARKit.m, CapsuleCollider and SphereCollider in exported build.",
-    "ios_camera": "User confirmed CAMERA DENIED status; awaiting camera permission in iOS Settings.",
+    "ios_camera": "AVFoundation initially reported NotDetermined (0), then Authorized (3). ARSession reached SessionTracking. Vision detected a real hand.",
     "ios_touch": "User reached placement with DEPLOY and reported its camera-permission message.",
-    "ios_build": "Xcode signed build passed; 229 MiB installed bundle (development signing)."
+    "ios_build": "Xcode signed build passed; 229 MiB installed bundle (development signing).",
+    "device_short_sample": {
+      "samples": 165,
+      "tracked_samples": 159,
+      "median_fps": 30.0,
+      "median_inference_ms": 16.5,
+      "phases_observed": [
+        "Home",
+        "Placement"
+      ],
+      "sustained_10_minute_test": false,
+      "thermal_note": "iOS console reported Serious thermal state during the short session; sustained thermal performance has not passed acceptance."
+    },
+    "placement_fix": {
+      "camera_pose": "Input System TrackedPoseDriver with HandheldARInputDevice and XRHMD bindings, configured before activation",
+      "placement_ray": "Center reticle world ray, PlaneWithinPolygon, 1.0–3.5 m hit distance",
+      "interface": "Step 1/2 bottom sheet; confirmation disabled until valid floor hit; Step 2/2 hand scan follows confirmation",
+      "inference": "Vision disabled during Home, Placement, Workshop, Paused and Results",
+      "hardware_verified": false
+    }
   },
-  "hardware_acceptance": "pending",
+  "hardware_acceptance": "Camera authorization, AR session tracking, physical DEPLOY touch, and real hand detections verified in previous build. User remained at floor placement. Updated camera driver and placement UI installed; physical retest pending. Alignment, calibration-to-combat flow, 10-minute thermal test and demo capture remain pending.",
   "limitations": [
     "Vision uses 2D joints and estimated hand depth, not measured 3D hand pose.",
     "Three armour tiers share one Tripo rig with modular attachments. Enemy art is procedural.",
