@@ -35,3 +35,15 @@ venv/
 [Bb]uild/
 [Bb]uilds/
 node_modules/
+
+# IDE and Unity-generated diagnostics
+*.csproj
+*.sln
+*.slnx
+*.user
+*.suo
+.vs/
+.idea/
+/Unity/MemoryCaptures/
+/Unity/Recordings/
+/Unity/TestResults.xml

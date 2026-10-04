@@ -1,0 +1,38 @@
+{
+  "prototype": "0.1.0",
+  "updated_at_local": "2026-10-05",
+  "unity": "6000.3.19f1",
+  "device": "iPhone 13 Pro Max / iOS 18.3.2",
+  "checks": {
+    "editmode": {
+      "passed": 16,
+      "failed": 0
+    },
+    "native_vision_syntax": "passed",
+    "mac_build": "passed",
+    "mac_smoke_two_runs": {
+      "completed": true,
+      "won": true,
+      "wave": 5,
+      "kills": 5,
+      "gold": 100,
+      "xp": 100,
+      "runs": 2,
+      "arena_reset_passed": true,
+      "ui_raycast_passed": true
+    },
+    "ios_export": "passed; native ARKit archive and registration source verified",
+    "ios_install": "ARKit and diagnostics build installed on iPhone 13 Pro Max; initial launch verified. Native ARKit loads and missing-collider errors are resolved.",
+    "mac_ui": "Home, calibration and combat rendered; HUD raycast and DEPLOY callback passed in smoke test.",
+    "ios_native_packaging": "Verified libUnityARKit.a, UnityARKit.m, CapsuleCollider and SphereCollider in exported build.",
+    "ios_camera": "User confirmed CAMERA DENIED status; awaiting camera permission in iOS Settings.",
+    "ios_touch": "User reached placement with DEPLOY and reported its camera-permission message.",
+    "ios_build": "Xcode signed build passed; 229 MiB installed bundle (development signing)."
+  },
+  "hardware_acceptance": "pending",
+  "limitations": [
+    "Vision uses 2D joints and estimated hand depth, not measured 3D hand pose.",
+    "Three armour tiers share one Tripo rig with modular attachments. Enemy art is procedural.",
+    "Simulated smoke test does not validate tracking accuracy, real latency, difficulty or sustained device performance."
+  ]
+}

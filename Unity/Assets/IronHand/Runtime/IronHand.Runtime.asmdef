@@ -1,0 +1,1 @@
+{"name":"IronHand.Runtime","references":["Unity.XR.ARFoundation","Unity.XR.ARSubsystems","Unity.XR.CoreUtils","Unity.XR.Management","Unity.RenderPipelines.Universal.Runtime","Unity.RenderPipelines.Core.Runtime","Unity.ugui"],"allowUnsafeCode":true}

@@ -1,0 +1,114 @@
+IRONHAND — PROTOTYPE 0.1 / RUNBOOK
+Ngày cập nhật: 05-10-2026 (Asia/Ho_Chi_Minh)
+
+MỤC TIÊU VÀ PHẠM VI
+Bản chơi đơn, ưu tiên iPhone 13 Pro Max. Một tay giữ điện thoại nằm ngang,
+một tay đưa vào camera sau. ARKit định vị căn phòng; Apple Vision nhận 21
+khớp bàn tay; Unity gắn model giáp đã rig và xử lý chiến đấu.
+
+Có: đặt đấu trường trên mặt phẳng, calibration bằng 3 giây mẫu tay ổn định,
+giáp Tripo/Blender có khớp ngón, xoè tay bắn/khép tay hồi mana, ngắm bằng tâm
+camera, 5 wave, 3 loại quái, HP/mana, vàng/XP, 3 cấp giáp, nâng cấp và save.
+Bản Mac dùng bàn tay/môi trường giả lập để kiểm tra gameplay.
+
+QUYẾT ĐỊNH KỸ THUẬT SO VỚI PLAN
+- Dùng Unity 6000.3.19f1; AR Foundation/ARKit 6.3.5; URP 17.3.0.
+- Provider iOS hiện dùng Vision VNDetectHumanHandPoseRequest của Apple.
+  Không cần ManoMotion license hoặc bridge MediaPipe cho bản thử đầu.
+  IHandTrackingProvider cho phép thay provider sau khi đo trên thiết bị.
+- Vision trả khớp 2D. Độ sâu và hướng bàn tay được ước lượng từ hình chiếu,
+  không phải tracking 3D đầy đủ. Chưa giải quyết occlusion giữa ngón/tay
+  thật/vật trong phòng, xoay tay nhìn nghiêng hoặc khuỷu tay.
+- Calibration kiểm tra đủ khớp, vùng ảnh, độ mở và độ ổn định; không quét
+  thành mesh cá nhân hoá, không đo chính xác kích thước tay theo centimet.
+- SCOUT/PULSE/AEGIS dùng chung rig Tripo, khác chỉ số, màu phát sáng và
+  module cổ tay. Chưa phải ba model Tripo độc lập. Quái là mesh cơ bản tạo
+  trong Unity, đủ cho vòng chơi; thay bằng art hoàn thiện ở giai đoạn sau.
+- Không thêm server, tài khoản game, multiplayer, IAP hay gửi ảnh camera
+  lên cloud. Không phát sinh tác vụ Tripo API mới.
+
+CHƠI TRÊN IPHONE
+1. Mở IronHand và cho phép Camera. Giữ máy nằm ngang, ở nơi đủ sáng.
+2. DEPLOY. Di chuyển điện thoại chậm, hướng xuống sàn rõ hoa văn cách
+   khoảng 1–3 m. Khi báo Floor found, bấm CONFIRM CLEAR AREA.
+3. Đưa đầy đủ bàn tay và cổ tay vào ảnh, xoè tay và giữ ổn định 3 giây.
+   Nếu chọn sai tay, dùng SWITCH LEFT / RIGHT. BEGIN DEFENSE để bắt đầu.
+4. Ngắm bằng dấu cộng giữa màn hình. Xoè bàn tay để bắn (3 phát/giây,
+   4 mana/phát). Nắm tay để hồi năng lượng. Tia hiển thị bắt đầu từ lòng
+   bàn tay nhưng hướng trúng đích theo camera để dễ chơi với một tay.
+5. Mất bàn tay: dừng bắn và ẩn giáp sau khi mẫu quá 200 ms. Mất tracking
+   AR hoặc app ra nền: tạm dừng chiến đấu. AR ổn định lại: đếm 3 giây.
+6. Hết 5 wave nhận thưởng hoàn thành. Thua vẫn giữ thưởng đã nhận.
+   WORKSHOP mua nâng cấp; giáp mở ở level 1/3/5 với yêu cầu vàng.
+7. Nút II để pause/reset khu vực. Reset kết thúc lượt hiện tại.
+
+CHƠI MÔ PHỎNG MAC / UNITY EDITOR
+- Enter: DEPLOY, xác nhận khu vực, bắt đầu sau calibration.
+- Space giữ: xoè tay/bắn. Thả: khép tay/hồi năng lượng.
+- Giữ chuột phải và kéo: ngắm. H: mất tay; T: mất AR; L: đổi tay.
+- Esc: pause/resume. Các nút workshop hoạt động bằng chuột/touch.
+- Save mô phỏng tách khỏi save iPhone; smoke test dùng save tạm riêng.
+
+BUILD TỪ REPO
+Mở thư mục Unity bằng Unity 6000.3.19f1 có iOS Build Support.
+Scene: Assets/Scenes/IronHand.unity.
+
+  bash tools/build_unity.sh test
+  bash tools/build_unity.sh mac
+  bash tools/build_unity.sh ios
+
+Lệnh prepare chỉ dùng khi cần tái tạo scene/config mặc định và kiểm tra
+model import. Nó ghi lại scene, vì vậy không chạy lên scene chỉnh tay
+chưa được lưu riêng. Không chạy hai Unity editor trên cùng project.
+
+Đầu ra:
+  Builds/Mac/IronHand.app
+  Builds/iOS/Unity-iPhone.xcodeproj
+
+Ký và cài (Xcode đã đăng nhập Team, thiết bị đã Trust Mac/Developer Mode):
+  IRONHAND_APPLE_TEAM=<team-id> IRONHAND_DEVICE=<iPhone-UDID> \
+    bash tools/install_iphone.sh
+
+Dùng UDID từ Xcode > Window > Devices and Simulators. Build phải chỉ rõ
+thiết bị thật để Xcode đăng ký đúng UDID trong provisioning profile.
+Nếu iOS yêu cầu Trust Developer App, người dùng xác nhận trong Settings
+> General > VPN & Device Management. Signing bằng Personal Team có thể
+hết hạn sau 7 ngày; khi đó cần ký/cài lại. Team/profile không lưu trong Git.
+
+SMOKE TEST
+  Builds/Mac/IronHand.app/Contents/MacOS/IronHand -batchmode -nographics \
+    --ironhand-smoke -logFile /absolute/path/to/smoke.log
+
+Chạy hai lượt với wave rút ngắn và tự ngắm, xen giữa reset đấu trường.
+Kiểm tra thắng, đủ 5 wave mỗi lượt và pool quái tồn tại sau reset.
+Đây là kiểm tra logic tích hợp, không phải benchmark AR hoặc bằng chứng
+độ khó cân bằng. Mỗi lượt bình thường dài khoảng 3–5 phút.
+
+DỮ LIỆU VÀ CHẨN ĐOÁN
+- iOS: Documents/device/progress.json, file .bak và bản lỗi được giữ lại.
+- Mac: ~/Library/Application Support/IronHand/IronHand/simulation/.
+- Gold/XP lưu khi nhận thưởng; mua đồ chỉ đổi trạng thái nếu ghi thành công.
+- Documents/diagnostics/*.csv (Mac nằm trong persistentDataPath tương ứng).
+- Nút D bật FPS, thời gian frame, tuổi mẫu pose, thời gian Vision, trạng
+  thái provider và lỗi save. Log không chứa ảnh camera.
+- pose_age_ms tính từ lúc C# lấy frame camera đến frame render hiện tại;
+  inference_ms là thời gian tác vụ Vision. Không gọi hai số này là độ trễ
+  chuyển động–hiển thị. Độ trễ đó phải đo bằng video camera tốc độ cao.
+- Thu diagnostics bằng devicectl device copy from, domain appDataContainer,
+  domain identifier com.nghienvothuat.ironhand, source Documents/diagnostics.
+
+NGHIỆM THU TRÊN THIẾT BỊ — CHƯA TỰ COI LÀ ĐẠT
+A. Camera nền đúng chiều khi xoay landscape trái/phải; điểm tay khớp cả
+   tay trái/phải, không lệch vì crop/FOV hoặc notch.
+B. Tay mở/khép, từng ngón, đưa tay khỏi ảnh: giáp bám và dừng bắn đúng.
+C. Điện thoại di chuyển: quái giữ vị trí thế giới, tiếp cận người chơi.
+D. Chơi thực tế 10 phút: FPS, nhiệt, mức tụt pin, Vision timeout/crash.
+E. Cố ý mất AR, app ra nền, mở lại, RESET AREA rồi chơi tiếp.
+F. Mua đồ, tắt/mở app, kiểm tra vàng/rank/giáp còn đúng; kiểm tra không
+   nhận thưởng trùng cho cùng một enemy.
+G. Video demo 60–90 giây gồm calibration, combat, kill, reward, upgrade.
+
+KẾT QUẢ TỰ ĐỘNG VÀ CÀI ĐẶT
+Xem docs/Prototype-Validation.json cho kết quả và giới hạn đã xác nhận.
+Không đánh dấu các mục nghiệm thu thiết bị ở trên chỉ dựa trên build
+thành công hoặc smoke test mô phỏng.
