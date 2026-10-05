@@ -7,8 +7,10 @@ một tay đưa vào camera sau. ARKit định vị căn phòng; Apple Vision nh
 khớp bàn tay; Unity gắn model giáp đã rig và xử lý chiến đấu.
 
 Có: đặt đấu trường trên mặt phẳng, calibration bằng 3 giây mẫu tay ổn định,
-giáp Tripo/Blender có khớp ngón, xoè tay bắn/khép tay hồi mana, ngắm bằng tâm
-camera, 5 wave, 3 loại quái, HP/mana, vàng/XP, 3 cấp giáp, nâng cấp và save.
+giáp Tripo/Blender có khớp ngón, xoè tay phóng rocket/khép tay hồi mana,
+ngắm bằng tâm camera, 5 wave, 3 loại quái đứng yên, vàng/XP, giáp và save.
+Bản test hiện tại: quái không phản công; HP/nâng cấp HP vẫn lưu nhưng chưa
+có tác dụng chiến đấu trong chế độ này.
 Bản Mac dùng bàn tay/môi trường giả lập để kiểm tra gameplay.
 
 QUYẾT ĐỊNH KỸ THUẬT SO VỚI PLAN
@@ -16,7 +18,7 @@ QUYẾT ĐỊNH KỸ THUẬT SO VỚI PLAN
 - Provider iOS hiện dùng Vision VNDetectHumanHandPoseRequest của Apple.
   Không cần ManoMotion license hoặc bridge MediaPipe cho bản thử đầu.
   IHandTrackingProvider cho phép thay provider sau khi đo trên thiết bị.
-- Vision trả khớp 2D. Độ sâu và hướng bàn tay được ước lượng từ hình chiếu,
+- Vision trả khớp 2D. Giáp được fit vào hình chiếu ở độ sâu hiển thị cố định,
   không phải tracking 3D đầy đủ. Chưa giải quyết occlusion giữa ngón/tay
   thật/vật trong phòng, xoay tay nhìn nghiêng hoặc khuỷu tay.
 - Calibration kiểm tra đủ khớp, vùng ảnh, độ mở và độ ổn định; không quét
@@ -27,17 +29,24 @@ QUYẾT ĐỊNH KỸ THUẬT SO VỚI PLAN
 - Không thêm server, tài khoản game, multiplayer, IAP hay gửi ảnh camera
   lên cloud. Không phát sinh tác vụ Tripo API mới.
 
-CHƠI TRÊN IPHONE
+CHƠI TRÊN IPHONE / IPAD
 1. Mở IronHand và cho phép Camera. Giữ máy nằm ngang, ở nơi đủ sáng.
 2. DEPLOY. Bước 1/2: chưa đưa tay vào camera; di chuyển điện thoại chậm,
    hướng dấu cộng giữa màn hình xuống sàn rõ hoa văn cách khoảng 1–3 m.
    Khi xuất hiện dấu màu cyan trên sàn, nút CONFIRM CLEAR AREA mới bật.
    Bấm nút đó để chuyển sang quét tay; xoè tay ở bước đặt sàn chưa có tác dụng.
 3. Đưa đầy đủ bàn tay và cổ tay vào ảnh, xoè tay và giữ ổn định 3 giây.
-   Nếu chọn sai tay, dùng SWITCH LEFT / RIGHT. BEGIN DEFENSE để bắt đầu.
+   Nếu chọn sai tay, dùng SWITCH LEFT / RIGHT. ARMOUR COVERAGE mặc định
+   118%, nút −/+ chỉnh trong khoảng 100–160% và được lưu trên thiết bị.
+   Kiểm tra đầu ngón/cổ tay tại màn hình READY, rồi BEGIN DEFENSE.
 4. Ngắm bằng dấu cộng giữa màn hình. Xoè bàn tay để bắn (3 phát/giây,
-   4 mana/phát). Nắm tay để hồi năng lượng. Tia hiển thị bắt đầu từ lòng
-   bàn tay nhưng hướng trúng đích theo camera để dễ chơi với một tay.
+   4 mana/phát). Nắm tay để hồi năng lượng. Rocket bay từ lòng bàn tay
+   tới mục tiêu ngắm bằng camera, vận tốc 5 m/s. Chỉ trừ máu khi va chạm;
+   mỗi quái có thanh máu. Trúng đạn có nổ; chết có 12 mảnh vỡ chịu trọng
+   lực, xoay và nảy trên độ cao sàn đấu trường. Mảnh vỡ dùng mô phỏng
+   chuyển động, không va chạm với đồ đạc thật chưa được dựng mesh.
+   Quái giữ vị trí spawn, không phản công; các mục tiêu còn sống không
+   biến mất khi hết thời gian spawn. Diệt hết chúng mới chuyển wave.
 5. Mất bàn tay: dừng bắn và ẩn giáp sau khi mẫu quá 200 ms. Mất tracking
    AR hoặc app ra nền: tạm dừng chiến đấu. AR ổn định lại: đếm 3 giây.
 6. Hết 5 wave nhận thưởng hoàn thành. Thua vẫn giữ thưởng đã nhận.
@@ -82,6 +91,8 @@ SMOKE TEST
     --ironhand-smoke -logFile /absolute/path/to/smoke.log
 
 Chạy hai lượt với wave rút ngắn và tự ngắm, xen giữa reset đấu trường.
+Bộ test tự khép tay để hồi mana, phải diệt hết mục tiêu mỗi wave; giới
+hạn toàn bộ test là 360 giây vì mục tiêu không còn tự bị xoá khi hết giờ.
 Kiểm tra thắng, đủ 5 wave mỗi lượt và pool quái tồn tại sau reset.
 Đây là kiểm tra logic tích hợp, không phải benchmark AR hoặc bằng chứng
 độ khó cân bằng. Mỗi lượt bình thường dài khoảng 3–5 phút.
@@ -107,10 +118,14 @@ DỮ LIỆU VÀ CHẨN ĐOÁN
   domain identifier com.nghienvothuat.ironhand, source Documents/diagnostics.
 
 NGHIỆM THU TRÊN THIẾT BỊ — CHƯA TỰ COI LÀ ĐẠT
+Ngày 05-10-2026: người dùng chơi trên iPad thế hệ 8 và xác nhận "Đã phủ
+ổn, rocket và nổ hoạt động". Đây là nghiệm thu vòng thử tay/bắn hiện tại;
+các trường hợp đa tư thế, nhiệt/pin và reset bên dưới vẫn cần kiểm tra riêng.
 A. Camera nền đúng chiều khi xoay landscape trái/phải; điểm tay khớp cả
    tay trái/phải, không lệch vì crop/FOV hoặc notch.
 B. Tay mở/khép, từng ngón, đưa tay khỏi ảnh: giáp bám và dừng bắn đúng.
-C. Điện thoại di chuyển: quái giữ vị trí thế giới, tiếp cận người chơi.
+C. Điện thoại di chuyển: quái giữ vị trí thế giới, không đi tới camera.
+   Rocket có thời gian bay, chạm mới trừ máu; mỗi kill chỉ thưởng một lần.
 D. Chơi thực tế 10 phút: FPS, nhiệt, mức tụt pin, Vision timeout/crash.
 E. Cố ý mất AR, app ra nền, mở lại, RESET AREA rồi chơi tiếp.
 F. Mua đồ, tắt/mở app, kiểm tra vàng/rank/giáp còn đúng; kiểm tra không
@@ -121,3 +136,22 @@ KẾT QUẢ TỰ ĐỘNG VÀ CÀI ĐẶT
 Xem docs/Prototype-Validation.json cho kết quả và giới hạn đã xác nhận.
 Không đánh dấu các mục nghiệm thu thiết bị ở trên chỉ dựa trên build
 thành công hoặc smoke test mô phỏng.
+
+ĐỘ PHỦ TAY SẮT — BẢN TEST ROCKET
+- Retarget cả vị trí và khoảng cách khớp, thay vì chỉ xoay ngón theo model
+  gốc. Fit theo phép chiếu camera, hỗ trợ tỉ lệ iPad 4:3 và điện thoại.
+- Dưới các tấm giáp Tripo có một lớp kim loại đục: palm hull, từng đoạn
+  ngón và cổ tay. Lớp này che các khe giữa tấm giáp khi xoè/nắm.
+- Lớp lót nằm sau giáp theo từng tia camera để giữ đúng hình chiếu khi
+  tay lệch tâm; thêm phần che kẽ ngón cái sát lòng bàn tay.
+- Dự đoán chuyển động ngắn được chặn ở 10% bề rộng lòng bàn tay để giảm
+  độ trễ; độ phủ tăng tối đa 160% chỉ là công cụ fit, không xác nhận chất lượng.
+- Đây là bao hình học quanh landmark, KHÔNG phải segmentation đường viền
+  da. Chưa thể bảo đảm 100% không lộ da khi tay xoay nghiêng, di chuyển
+  nhanh hoặc mất nhận diện. Tiêu chí core gameplay này vẫn phải nghiệm thu
+  trực tiếp trên camera, với nhiều kích thước tay, pose và điều kiện sáng.
+- Nếu vẫn hở sau retarget/coverage: bước tiếp theo là mask riêng cho bàn
+  tay, đồng bộ mask/pose/ảnh camera và xử lý che khuất. Không dùng person
+  occlusion để hoàn thành việc này vì nó giữ người thật ở trước nội dung ảo.
+Tham khảo API đang dùng (chỉ xuất keypoint):
+https://developer.apple.com/documentation/vision/vndetecthumanhandposerequest

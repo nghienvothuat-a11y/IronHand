@@ -7,8 +7,9 @@ Prototype game AR trên di động: gắn tay giáp 3D lên bàn tay qua camera,
 - Có kế hoạch kỹ thuật, model gốc xuất từ Tripo, model Blender đã rig và animation thử cử chỉ.
 - Có FBX/GLB, texture, quy ước xương và script kiểm tra rig.
 - Có project Unity 6.3 LTS trong `Unity/`, bản mô phỏng Mac và pipeline build iOS.
-- Gameplay gồm calibration, 5 wave, 3 loại quái, 3 biến thể giáp, mana/HP, vàng/XP, workshop và lưu local.
-- Provider iOS dùng Apple Vision nhận 21 khớp 2D từ frame AR Foundation. Độ sâu bàn tay là ước lượng đơn ảnh; chưa được xem là pose tay 3D đã nghiệm thu.
+- Bản test hiện tại: quái đứng yên, không phản công; rocket bay tới mục tiêu rồi mới trừ máu, nổ và tung mảnh vỡ khi chết. Giữ 5 wave, vàng/XP, giáp, workshop và save local.
+- Provider iOS dùng Apple Vision nhận 21 khớp 2D. Giáp được fit theo khớp và thêm lớp kim loại che các khe, có nút chỉnh độ phủ. Đây chưa phải segmentation da hoặc pose tay 3D đã nghiệm thu.
+- Camera, sàn AR, calibration và chiến đấu đã chạy trên iPad thế hệ 8. Người dùng đã xác nhận độ phủ tay ổn, rocket và hiệu ứng nổ hoạt động; chưa nghiệm thu mọi góc xoay/chuyển động hoặc độ ổn định nhiệt dài hạn.
 - Kết quả chạy thiết bị và các giới hạn được ghi trong `docs/Prototype-Runbook.txt`.
 
 ## Nội dung repo

@@ -16,7 +16,7 @@ namespace IronHand
         public static GameObject Part(Transform parent,PrimitiveType type,Vector3 pos,Vector3 size,Material material,bool collider=false)
         {
             var g=GameObject.CreatePrimitive(type);g.transform.SetParent(parent,false);g.transform.localPosition=pos;g.transform.localScale=size;g.GetComponent<Renderer>().sharedMaterial=material;
-            if(!collider)Object.Destroy(g.GetComponent<Collider>());return g;
+            if(!collider){if(Application.isPlaying)Object.Destroy(g.GetComponent<Collider>());else Object.DestroyImmediate(g.GetComponent<Collider>());}return g;
         }
         public static Transform EnemyMesh(Transform parent,int kind)
         {
@@ -47,57 +47,43 @@ namespace IronHand
         public int Id {get;private set;}
         public bool Alive {get;private set;}
         public float Health {get;private set;}
+        public float MaxHealth {get;private set;}
         public Vector3 AimPoint => transform.position+Vector3.up*(Kind==0?0:Kind==1?.43f:.58f);
         public float Radius => spec.radius;
-        public float AttackProgress => windup/.4f;
         public EnemySpec Spec=>spec;
+        public Bounds HitBounds {get {var bounds=bodyRenderers[0].bounds;for(int i=1;i<bodyRenderers.Length;i++)bounds.Encapsulate(bodyRenderers[i].bounds);return bounds;}}
         EnemySpec spec;
-        Transform visual;
-        float attackClock,windup,phase;
-        public void Initialize(int kind,EnemySpec data){Kind=kind;spec=data;visual=Visuals.EnemyMesh(transform,kind);gameObject.SetActive(false);}
+        Renderer[] bodyRenderers;
+        Transform visual,healthRoot,healthFill;
+        float phase;
+        public void Initialize(int kind,EnemySpec data)
+        {
+            Kind=kind;spec=data;visual=Visuals.EnemyMesh(transform,kind);bodyRenderers=visual.GetComponentsInChildren<Renderer>();
+            healthRoot=new GameObject("Target health").transform;healthRoot.SetParent(transform,false);
+            Visuals.Part(healthRoot,PrimitiveType.Cube,Vector3.zero,new Vector3(.42f,.035f,.008f),Visuals.Material(new Color(.025f,.04f,.06f),true));
+            healthFill=Visuals.Part(healthRoot,PrimitiveType.Cube,new Vector3(0,0,-.006f),new Vector3(.4f,.022f,.008f),Visuals.Material(new Color(1,.3f,.1f),true)).transform;
+            gameObject.SetActive(false);
+        }
         public void Spawn(int id,int wave,Vector3 pos,Transform arena)
         {
-            transform.SetParent(arena,true);transform.position=pos;Id=id;Health=spec.health*(1+.12f*(wave-1));Alive=true;attackClock=0;windup=0;phase=id;gameObject.SetActive(true);
+            transform.SetParent(arena,true);transform.position=pos;Id=id;Health=MaxHealth=spec.health*(1+.12f*(wave-1));Alive=true;phase=id;gameObject.SetActive(true);UpdateHealth();
         }
-        public bool Hit(float damage){if(!Alive)return false;Health-=damage;if(Health>0)return false;Despawn();return true;}
+        public bool Hit(float damage)
+        {
+            if(!Alive||damage<=0)return false;
+            Health=Mathf.Max(0,Health-damage);UpdateHealth();if(Health>0)return false;Despawn();return true;
+        }
+        void UpdateHealth(){float ratio=Health/Mathf.Max(1,MaxHealth);healthFill.localScale=new Vector3(.4f*ratio,.022f,.008f);healthFill.localPosition=new Vector3(-.2f*(1-ratio),0,-.006f);}
         public void Despawn(){Alive=false;gameObject.SetActive(false);}
-        public void Tick(float dt,Vector3 camera,System.Action<int> damage)
+        public void Tick(float dt,Vector3 camera)
         {
             if(!Alive)return;
             Vector3 delta=camera-transform.position;delta.y=0;
             if(delta.sqrMagnitude>.001f)transform.rotation=Quaternion.LookRotation(-delta.normalized,Vector3.up);
-            if(delta.magnitude>.75f){transform.position+=delta.normalized*(spec.speed*dt);windup=0;}
-            else
-            {
-                attackClock-=dt;
-                if(attackClock<=0){windup+=dt;if(windup>=.4f){damage(spec.damage);windup=0;attackClock=spec.attackSeconds;}}
-            }
-            phase+=dt*3;visual.localPosition=new Vector3(0,Kind==0?Mathf.Sin(phase)*.035f:Mathf.Sin(phase)*.012f,windup*.14f);
+            // Target practice: the world-space spawn position stays fixed. No attacks.
+            phase+=dt*2;visual.localPosition=new Vector3(0,Kind==0?Mathf.Sin(phase)*.018f:0,0);
+            healthRoot.position=AimPoint+Vector3.up*(Kind==0?.27f:Kind==1?.49f:.65f);
+            healthRoot.rotation=Quaternion.LookRotation(healthRoot.position-camera,Vector3.up);
         }
-    }
-    public sealed class CombatFx : MonoBehaviour
-    {
-        readonly LineRenderer[] beams=new LineRenderer[12];readonly float[] life=new float[12];int cursor;
-        AudioSource audioSource;AudioClip shot,hit;
-        public bool Sound=true;
-        public void Initialize()
-        {
-            for(int i=0;i<beams.Length;i++)
-            {
-                var g=new GameObject("Pulse beam");g.transform.SetParent(transform);var l=g.AddComponent<LineRenderer>();l.positionCount=2;l.startWidth=.012f;l.endWidth=.004f;l.material=Visuals.Material(new Color(.2f,.93f,1),true);l.enabled=false;beams[i]=l;
-            }
-            audioSource=gameObject.AddComponent<AudioSource>();audioSource.spatialBlend=0;audioSource.volume=.13f;shot=Tone("Pulse",480,.075f);hit=Tone("Impact",120,.11f);
-        }
-        static AudioClip Tone(string name,float hz,float seconds)
-        {
-            int count=(int)(22050*seconds);var data=new float[count];for(int i=0;i<count;i++){float t=(float)i/count;data[i]=Mathf.Sin(2*Mathf.PI*hz*i/22050*(1-t*.3f))*Mathf.Pow(1-t,3);}
-            var clip=AudioClip.Create(name,count,1,22050,false);clip.SetData(data,0);return clip;
-        }
-        public void Shot(Vector3 start,Vector3 end,Color color,bool landed)
-        {
-            int i=cursor++%beams.Length;beams[i].SetPosition(0,start);beams[i].SetPosition(1,end);beams[i].startColor=color;beams[i].endColor=Color.white;beams[i].enabled=true;life[i]=.08f;
-            if(Sound)audioSource.PlayOneShot(landed?hit:shot);
-        }
-        public void Tick(float dt){for(int i=0;i<life.Length;i++)if(life[i]>0){life[i]-=dt;if(life[i]<=0)beams[i].enabled=false;}}
     }
 }

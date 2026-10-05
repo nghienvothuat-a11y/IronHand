@@ -51,7 +51,7 @@ namespace IronHand
         long lastSample;
         double stableStart=-1;
         int nextId, smokeRuns;
-        bool smokeResetPassed, smokeUIPassed;
+        bool smokeResetPassed, smokeUIPassed,smokeRecharging;
         bool pausedByTracking,backgrounded;
         Vector2 lastWrist;
         float lastWidth;
@@ -80,7 +80,8 @@ namespace IronHand
             FPS=Mathf.Lerp(FPS,1/Mathf.Max(.0001f,Time.unscaledDeltaTime),.04f);
             if(Arena.Simulation!=null)
             {
-                var s=Arena.Simulation;s.firing=Phase==GamePhase.Calibration||Phase==GamePhase.Ready||Input.GetKey(KeyCode.Space)||AutoTest;
+                if(AutoTest){if(Mana<4)smokeRecharging=true;else if(Mana>=MaxMana*.9f)smokeRecharging=false;}
+                var s=Arena.Simulation;s.firing=Phase==GamePhase.Calibration||Phase==GamePhase.Ready||Input.GetKey(KeyCode.Space)||(AutoTest&&!smokeRecharging);
                 if(Input.GetKeyDown(KeyCode.H))s.lost=!s.lost;
                 if(Input.GetKeyDown(KeyCode.L))s.left=!s.left;
                 if(Input.GetKeyDown(KeyCode.T))SimulateTrackingLoss=!SimulateTrackingLoss;
@@ -89,12 +90,12 @@ namespace IronHand
             }
             if(Input.GetKeyDown(KeyCode.Return)){if(Phase==GamePhase.Home)StartSetup();else if(Phase==GamePhase.Placement)ConfirmArea();else if(Phase==GamePhase.Ready)StartRun();}
             if(Input.GetKeyDown(KeyCode.Escape))PauseOrResume();
-            Arena.SetHandTracking(Phase==GamePhase.Calibration||Phase==GamePhase.Ready||Phase==GamePhase.Combat||Phase==GamePhase.Intermission);
+            Arena.SetHandTracking(Phase==GamePhase.Calibration||Phase==GamePhase.Ready||Phase==GamePhase.Combat||Phase==GamePhase.Intermission||(Phase==GamePhase.Paused&&!pausedByTracking));
             Arena.Tick();var frame=Arena.Hands.Frame;
             if(UseHandOverride)frame.left=HandLeftOverride;
             bool showcase=Phase==GamePhase.Home||Phase==GamePhase.Workshop||Phase==GamePhase.Results;
             if(showcase){showroom.Tick();Rig.Tick(showroom.Frame,Arena.Camera,realDt,true);}else Rig.Tick(frame,Arena.Camera,realDt);
-            Rig.SetTier(Progress.Data.equipped,Armor.color);fx.Tick(realDt);
+            Rig.SetTier(Progress.Data.equipped,Armor.color);if(Phase!=GamePhase.Paused)fx.Tick(realDt);
             bool active=Phase==GamePhase.Combat||Phase==GamePhase.Intermission||Phase==GamePhase.Calibration||Phase==GamePhase.Ready;
             if(active&&!TrackingOK){beforePause=Phase;pausedByTracking=true;Phase=GamePhase.Paused;ResumeCountdown=3;gesture.Reset();Firing=false;stableStart=-1;calibrationWidths.Clear();Calibration=0;Changed?.Invoke();}
             if(Phase==GamePhase.Paused&&pausedByTracking)
@@ -147,36 +148,52 @@ namespace IronHand
             if(Clock>Config.cleanupSeconds&&spawnClock<=0&&AliveCount<Config.maxEnemies)
             {
                 int kind=Wave==1?0:Wave<3?random.Next(2):random.Next(3);
-                if(Arena.TrySpawnPosition(random,kind==0,out var pos))foreach(var e in enemies)if(!e.Alive&&e.Kind==kind){e.Spawn(++nextId,Wave,pos,Arena.Root);break;}
+                for(int attempt=0;attempt<20;attempt++)
+                {
+                    if(!Arena.TrySpawnPosition(random,kind==0,out var pos))break;
+                    bool crowded=false;foreach(var other in enemies)if(other.Alive){var separation=other.transform.position-pos;separation.y=0;if(separation.magnitude<other.Radius+Config.enemies[kind].radius+.18f){crowded=true;break;}}
+                    if(crowded)continue;
+                    foreach(var e in enemies)if(!e.Alive&&e.Kind==kind){e.Spawn(++nextId,Wave,pos,Arena.Root);break;}
+                    break;
+                }
                 spawnClock=Mathf.Lerp(Config.firstSpawnInterval,Config.finalSpawnInterval,(Wave-1f)/Mathf.Max(1,Config.waveCount-1));
             }
             bool fire=gesture.Tick(frame.openness,frame.valid,frame.capturedAt,Time.realtimeSinceStartupAsDouble);
             Firing=fire&&Mana>=4;
             if(Firing&&weaponClock<=0){Fire();weaponClock=1f/3;regenDelay=.35f;}
             if(!fire&&regenDelay<=0)Mana=Mathf.Min(MaxMana,Mana+12*dt);
-            foreach(var e in enemies)if(e.Alive){e.Tick(dt,Arena.Camera.transform.position,Hurt);if(Phase!=GamePhase.Combat)break;}
+            foreach(var e in enemies)if(e.Alive)e.Tick(dt,Arena.Camera.transform.position);
+            fx.TickProjectiles(dt,enemies,OnRocketImpact);
             if(Phase!=GamePhase.Combat)return;
-            if(Clock<=0||(Clock<=Config.cleanupSeconds&&AliveCount==0))
+            // Keep remaining targets in place until they are destroyed.
+            if(Clock<=Config.cleanupSeconds&&AliveCount==0)
             {
-                ClearEnemies();gesture.Reset();
+                ClearEnemies(false);gesture.Reset();
                 if(Wave>=Config.waveCount){Won=true;Reward(-1,50,50);SetPhase(GamePhase.Results);Progress.Flush();}
                 else {Clock=Config.breakSeconds;SetPhase(GamePhase.Intermission);}
             }
         }
         void Fire()
         {
-            Mana-=4;var ray=new Ray(Arena.Camera.transform.position,Arena.Camera.transform.forward);
-            EnemyActor target=null;float nearest=10;
+            var ray=new Ray(Arena.Camera.transform.position,Arena.Camera.transform.forward);
+            float nearest=10;Vector3 end=ray.GetPoint(6);
             foreach(var e in enemies)
             {
-                if(!e.Alive)continue;var v=e.AimPoint-ray.origin;float d=Vector3.Dot(v,ray.direction);
+                if(!e.Alive)continue;
+                if(ProjectileGeometry.SegmentBounds(ray.origin,ray.GetPoint(10),e.HitBounds,0,out float hit)&&hit*10<nearest){nearest=hit*10;end=ray.GetPoint(nearest);continue;}
+                var v=e.AimPoint-ray.origin;float d=Vector3.Dot(v,ray.direction);
                 if(d<=0||d>=nearest)continue;
                 float assist=Mathf.Tan(2*Mathf.Deg2Rad)*d;
-                if((v-ray.direction*d).magnitude<=e.Radius+assist){nearest=d;target=e;}
+                if((v-ray.direction*d).magnitude<=e.Radius+assist){nearest=d;end=e.AimPoint;}
             }
-            var end=target?target.AimPoint:ray.GetPoint(6);
-            fx.Shot(Rig.Muzzle.position,end,Armor.color,target);
-            if(target&&target.Hit(Damage)){Kills++;Reward(target.Id,target.Spec.gold,target.Spec.xp);}
+            if(fx.Launch(Rig.Muzzle.position,end,Damage))Mana-=4;
+        }
+        void OnRocketImpact(EnemyActor target,int damage,Vector3 point)
+        {
+            if(Phase!=GamePhase.Combat||!target.Alive)return;
+            bool destroyed=target.Hit(damage);
+            fx.Explosion(destroyed?target.AimPoint:point,destroyed,Arena.Root?Arena.Root.position.y:0);
+            if(destroyed){Kills++;Reward(target.Id,target.Spec.gold,target.Spec.xp);}
         }
         void Reward(int id,int gold,int xp){if(Progress.Reward(id,gold,xp)){RunGold+=gold;RunXP+=xp;Changed?.Invoke();}}
         void Hurt(int damage){HP=Mathf.Max(0,HP-damage);hud.FlashDamage();if(HP<=0){Won=false;SetPhase(GamePhase.Results);ClearEnemies();Progress.Flush();}}
@@ -192,7 +209,8 @@ namespace IronHand
         public void ResetArea(){ClearEnemies();Progress.Flush();Arena.ResetArena();gesture.Reset();SetPhase(GamePhase.Placement);}
         public void ToggleSound(){fx.Sound=!fx.Sound;Notice=fx.Sound?"Sound on":"Sound off";Changed?.Invoke();}
         public void ToggleHand(){UseHandOverride=true;HandLeftOverride=!HandLeftOverride;Notice=HandLeftOverride?"Left hand selected":"Right hand selected";Changed?.Invoke();}
-        void ClearEnemies(){foreach(var e in enemies)if(e){e.Despawn();e.transform.SetParent(transform,true);}}
+        public void AdjustHandCoverage(float delta){Rig.SetCoverage(Rig.Coverage+delta);Notice=$"Armour coverage {Rig.Coverage:P0}";}
+        void ClearEnemies(bool clearEffects=true){foreach(var e in enemies)if(e){e.Despawn();e.transform.SetParent(transform,true);}if(clearEffects)fx.Clear();else fx.ClearProjectiles();}
         void SetPhase(GamePhase value){Phase=value;Firing=false;Changed?.Invoke();}
         void OnApplicationPause(bool paused){backgrounded=paused;if(paused){gesture.Reset();Progress?.Flush();}}
         void OnApplicationFocus(bool focus){backgrounded=Application.platform==RuntimePlatform.IPhonePlayer&&!focus;if(!focus)gesture.Reset();}
@@ -229,10 +247,12 @@ namespace IronHand
                 smokeResetPassed=true;
                 foreach(var enemy in enemies)smokeResetPassed &= enemy!=null;
             }
-            if(Phase==GamePhase.Results || autoClock>140)
+            // Stationary targets must actually die: allow time to recharge mana
+            // across both complete runs instead of timing out during wave ten.
+            if(Phase==GamePhase.Results || autoClock>360)
             {
-                bool success=Phase==GamePhase.Results&&Won&&smokeResetPassed&&smokeUIPassed;
-                var result=$"{{\"completed\":{(Phase==GamePhase.Results).ToString().ToLower()},\"won\":{Won.ToString().ToLower()},\"wave\":{Wave},\"kills\":{Kills},\"gold\":{RunGold},\"xp\":{RunXP},\"runs\":{smokeRuns+1},\"arena_reset_passed\":{smokeResetPassed.ToString().ToLower()},\"ui_raycast_passed\":{smokeUIPassed.ToString().ToLower()}}}";
+                bool success=Phase==GamePhase.Results&&Won&&smokeResetPassed&&smokeUIPassed&&fx.RocketsLaunched>0&&fx.Impacts>0&&fx.Destructions>0;
+                var result=$"{{\"completed\":{(Phase==GamePhase.Results).ToString().ToLower()},\"won\":{Won.ToString().ToLower()},\"wave\":{Wave},\"kills\":{Kills},\"gold\":{RunGold},\"xp\":{RunXP},\"runs\":{smokeRuns+1},\"arena_reset_passed\":{smokeResetPassed.ToString().ToLower()},\"ui_raycast_passed\":{smokeUIPassed.ToString().ToLower()},\"rockets_launched\":{fx.RocketsLaunched},\"rocket_impacts\":{fx.Impacts},\"destructions\":{fx.Destructions}}}";
                 File.WriteAllText(Path.Combine(Application.persistentDataPath,"smoke-result.json"),result);
                 Debug.Log("IRONHAND_SMOKE "+result);AutoTest=false;Application.Quit(success?0:1);
             }

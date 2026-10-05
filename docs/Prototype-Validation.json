@@ -2,15 +2,64 @@
   "prototype": "0.1.0",
   "updated_at_local": "2026-10-05",
   "unity": "6000.3.19f1",
-  "device": "iPhone 13 Pro Max / iOS 18.3.2",
+  "device": "iPad (8th generation) / iPadOS 26.7.1",
   "checks": {
     "editmode": {
-      "passed": 16,
+      "passed": 23,
       "failed": 0
     },
     "native_vision_syntax": "passed",
     "mac_build": "passed",
-    "mac_smoke_two_runs": {
+    "ios_export": "passed; native ARKit archive and registration source verified",
+    "ios_install": "Passed: final rocket/coverage build, including lining projection and thumb-web refinement, installed on iPad.",
+    "mac_ui": "Placement bottom sheet visually verified: center unobstructed, confirmation visible. Home/calibration/combat and DEPLOY UI raycast passed.",
+    "ios_native_packaging": "Verified libUnityARKit.a, UnityARKit.m, CapsuleCollider and SphereCollider in exported build.",
+    "ios_camera": "AVFoundation initially reported NotDetermined (0), then Authorized (3). ARSession reached SessionTracking. Vision detected a real hand.",
+    "ios_touch": "User reached placement with DEPLOY and reported its camera-permission message.",
+    "ios_build": "Passed: Xcode signed Debug build for connected iPad, including final lining refinement.",
+    "placement_fix": {
+      "camera_pose": "Input System TrackedPoseDriver with HandheldARInputDevice and XRHMD bindings, configured before activation",
+      "placement_ray": "Center reticle world ray, PlaneWithinPolygon, 1.0–3.5 m hit distance",
+      "interface": "Step 1/2 bottom sheet; confirmation disabled until valid floor hit; Step 2/2 hand scan follows confirmation",
+      "inference": "Vision disabled during Home, Placement, Workshop, Results and AR-tracking pause; enabled during manual pause for armour fitting.",
+      "hardware_verified": true
+    },
+    "ipad": {
+      "device": "iPad (8th generation) / iPadOS 26.7.1",
+      "xcode_build": "passed; signed specifically for connected iPad",
+      "install": "passed",
+      "launch": "verified from on-device diagnostics and user playtest",
+      "camera_ar_hand_test": "Floor placement, hand calibration, Ready and Combat verified. User reported moving enemies too fast and incomplete hand coverage.",
+      "baseline_measurements": {
+        "samples": 1098,
+        "combat_samples": 171,
+        "combat_median_fps": 30.0,
+        "max_planes": 3,
+        "gold_observed": 40
+      },
+      "baseline_source_commit": "81fb6b3",
+      "rocket_playtest": {
+        "user_confirmed": "Đã phủ ổn, rocket và nổ hoạt động",
+        "sample_count": 359,
+        "combat_samples": 155,
+        "combat_median_fps": 30.0,
+        "combat_median_inference_ms": 16.5,
+        "phases_observed": [
+          "Home",
+          "Placement",
+          "Calibration",
+          "Ready",
+          "Combat",
+          "Intermission"
+        ],
+        "highest_wave_observed": 2,
+        "gold_observed": 130,
+        "hp_observed": 100,
+        "sustained_10_minute_test": false,
+        "note": "Short session; inference time is not motion-to-photon latency. User confirmation precedes the final lining projection/thumb-web refinement."
+      }
+    },
+    "previous_beam_smoke_two_runs": {
       "completed": true,
       "won": true,
       "wave": 5,
@@ -21,14 +70,7 @@
       "arena_reset_passed": true,
       "ui_raycast_passed": true
     },
-    "ios_export": "passed; native ARKit archive and registration source verified",
-    "ios_install": "Camera/placement fix signed and installed on iPhone 13 Pro Max. Launch attempt blocked by locked device; awaiting physical floor-placement retest.",
-    "mac_ui": "Placement bottom sheet visually verified: center unobstructed, confirmation visible. Home/calibration/combat and DEPLOY UI raycast passed.",
-    "ios_native_packaging": "Verified libUnityARKit.a, UnityARKit.m, CapsuleCollider and SphereCollider in exported build.",
-    "ios_camera": "AVFoundation initially reported NotDetermined (0), then Authorized (3). ARSession reached SessionTracking. Vision detected a real hand.",
-    "ios_touch": "User reached placement with DEPLOY and reported its camera-permission message.",
-    "ios_build": "Xcode signed build passed; 229 MiB installed bundle (development signing).",
-    "device_short_sample": {
+    "previous_iphone_short_sample": {
       "samples": 165,
       "tracked_samples": 159,
       "median_fps": 30.0,
@@ -38,28 +80,35 @@
         "Placement"
       ],
       "sustained_10_minute_test": false,
-      "thermal_note": "iOS console reported Serious thermal state during the short session; sustained thermal performance has not passed acceptance."
+      "thermal_note": "iOS console reported Serious thermal state during the short session; sustained thermal performance has not passed acceptance.",
+      "note": "Historical camera/placement sample from iPhone, before switching to iPad."
     },
-    "placement_fix": {
-      "camera_pose": "Input System TrackedPoseDriver with HandheldARInputDevice and XRHMD bindings, configured before activation",
-      "placement_ray": "Center reticle world ray, PlaneWithinPolygon, 1.0–3.5 m hit distance",
-      "interface": "Step 1/2 bottom sheet; confirmation disabled until valid floor hit; Step 2/2 hand scan follows confirmation",
-      "inference": "Vision disabled during Home, Placement, Workshop, Paused and Results",
-      "hardware_verified": false
-    },
-    "ipad": {
-      "device": "iPad (8th generation) / iPadOS 26.7.1",
-      "source_commit": "81fb6b3",
-      "xcode_build": "passed; signed specifically for connected iPad",
-      "install": "passed",
-      "launch": "blocked by iPad lock screen; user unlock requested",
-      "camera_ar_hand_test": "pending device unlock and camera permission"
+    "mac_smoke_two_runs": {
+      "completed": true,
+      "won": true,
+      "wave": 5,
+      "kills": 25,
+      "gold": 465,
+      "xp": 465,
+      "runs": 2,
+      "arena_reset_passed": true,
+      "ui_raycast_passed": true,
+      "rockets_launched": 392,
+      "rocket_impacts": 347,
+      "destructions": 49
     }
   },
-  "hardware_acceptance": "Camera authorization, AR session tracking, physical DEPLOY touch, and real hand detections verified in previous build. User remained at floor placement. Updated camera driver and placement UI installed; physical retest pending. Alignment, calibration-to-combat flow, 10-minute thermal test and demo capture remain pending.",
+  "hardware_acceptance": "iPad camera, floor placement, calibration and combat passed. User confirmed adequate armour coverage, rockets and explosions in the target-practice build. All-pose skin replacement and sustained thermal performance remain unverified.",
   "limitations": [
-    "Vision uses 2D joints and estimated hand depth, not measured 3D hand pose.",
+    "Vision provides 2D joints, not a hand segmentation mask or measured 3D pose. Opaque geometric armour coverage cannot guarantee that no skin is visible for every pose or motion.",
     "Three armour tiers share one Tripo rig with modular attachments. Enemy art is procedural.",
     "Simulated smoke test does not validate tracking accuracy, real latency, difficulty or sustained device performance."
-  ]
+  ],
+  "current_iteration": {
+    "mode": "Stationary targets, no enemy attacks, physical travel before rocket damage, impact/death effects",
+    "hand": "Retarget joint positions and plate lengths; opaque palm/finger/wrist lining; coverage adjustment 100–160%",
+    "device_retest": "User accepted target-practice/coverage build on iPad. Final lining projection/thumb-web refinement also built and installed; that small visual refinement has not had a separate user playtest.",
+    "hand_visual_check": "Mac preview and live iPad screenshot inspected. Real finger plates align; additional lining projection/thumb-web refinement addresses residual edge gaps. User confirmed coverage is adequate for this prototype.",
+    "latest_launch": "Launch from Mac blocked by iPad lock screen after installation; previous rocket build was played and accepted by user."
+  }
 }

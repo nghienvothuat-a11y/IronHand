@@ -9,7 +9,7 @@ namespace IronHand
         static readonly Color Cyan=new Color(.28f,.92f,.96f),Ink=new Color(.027f,.058f,.083f,.96f),Muted=new Color(.51f,.64f,.69f),White=new Color(.9f,.95f,.96f);
         IronHandGame game;Font font;Sprite barSprite;RectTransform root,panel;Text status,wallet,hint,health,mana,wave,debug,calibration,centerMessage;Image healthFill,manaFill,damage,scanFill;
         GamePhase drawn=(GamePhase)(-1);bool dirty;float damageAlpha;
-        Button placementButton;Text placementButtonLabel;
+        Button placementButton;Text placementButtonLabel,coverageLabel;
         public void Initialize(IronHandGame value)
         {
             game=value;font=Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
@@ -48,12 +48,14 @@ namespace IronHand
             status.text=(game.Arena.IsDevice?"●  LIVE AR":"●  SIMULATOR")+"  /  "+(game.TrackingOK?"SYSTEM ONLINE":"TRACKING LOST");
             health.text=$"INTEGRITY    {game.HP:0} / {game.MaxHP}";healthFill.fillAmount=game.HP/game.MaxHP;
             mana.text=$"ENERGY        {game.Mana:0} / {game.MaxMana}";manaFill.fillAmount=game.Mana/game.MaxMana;
-            wave.text=game.Wave>0?$"WAVE  {game.Wave:00} / 05\n<size=16>{Mathf.CeilToInt(Mathf.Max(0,game.Clock))}s   ·   {game.AliveCount} HOSTILES</size>":"";
+            wave.text=game.Wave>0?$"WAVE  {game.Wave:00} / 05\n<size=16>{(game.Clock<=game.Config.cleanupSeconds?"CLEAR TARGETS":Mathf.CeilToInt(game.Clock-game.Config.cleanupSeconds)+"s SPAWNING")}   ·   {game.AliveCount} TARGETS</size>":"";
             hint.text=game.Arena.IsDevice?"OPEN PALM TO FIRE   ·   CLOSE HAND TO RECHARGE   ·   AIM WITH YOUR PHONE":"SIMULATION   /   ENTER: CONTINUE   ·   HOLD SPACE: FIRE   ·   RIGHT DRAG: AIM   ·   H: LOSE HAND   ·   T: LOSE AR   ·   L: SWITCH HAND";
             if(game.Phase==GamePhase.Placement)hint.text="";
+            if(game.Phase==GamePhase.Combat)hint.text="TARGET PRACTICE   ·   OPEN PALM: ROCKETS   ·   CLOSE HAND: RECHARGE   ·   ENEMIES DO NOT ATTACK";
             var f=game.Arena.Hands.Frame;
             debug.text=game.Diagnostics?$"{game.FPS:0} FPS  /  {Time.unscaledDeltaTime*1000:0.0} ms frame\nPOSE AGE {(Time.realtimeSinceStartupAsDouble-f.capturedAt)*1000:0} ms  /  VISION {f.inferenceMs:0} ms\n{game.Arena.Hands.Status}  ·  OPEN {f.openness:P0}\n{game.Progress.SaveError ?? "SAVE OK"}":"";
             if(calibration){calibration.text=$"{game.Calibration*100:00}%   /   "+game.Arena.Hands.Status;scanFill.fillAmount=game.Calibration;}
+            if(coverageLabel)coverageLabel.text=$"ARMOUR COVERAGE  {game.Rig.Coverage:P0}";
             if(centerMessage&&game.Phase==GamePhase.Placement)
             {
                 centerMessage.text=game.Arena.Status;
@@ -67,13 +69,13 @@ namespace IronHand
         public void FlashDamage(){damageAlpha=.24f;}
         void DrawPanel()
         {
-            foreach(Transform child in panel)Destroy(child.gameObject);calibration=null;scanFill=null;centerMessage=null;placementButton=null;placementButtonLabel=null;
+            foreach(Transform child in panel)Destroy(child.gameObject);calibration=null;scanFill=null;centerMessage=null;placementButton=null;placementButtonLabel=null;coverageLabel=null;
             switch(game.Phase)
             {
                 case GamePhase.Home:
                     Label(panel,"FIELD SYSTEM / 01",19,new Vector2(60,-345),new Vector2(650,40),Cyan);
                     Label(panel,"YOUR HAND.\nYOUR FIREPOWER.",66,new Vector2(55,-405),new Vector2(990,185),White);
-                    Label(panel,"Equip living steel. Defend your space.\nFive waves. One hand. No second chances.",26,new Vector2(62,-632),new Vector2(780,90),Muted);
+                    Label(panel,"Equip living steel. Launch palm rockets.\nStationary targets. Five waves. No enemy attacks.",26,new Vector2(62,-632),new Vector2(890,90),Muted);
                     Button(panel,"DEPLOY  →",new Vector2(60,-768),new Vector2(460,80),game.StartSetup,true);
                     Button(panel,"WORKSHOP",new Vector2(550,-768),new Vector2(260,80),game.Workshop,false);
                     Label(panel,game.Armor.code+"   /   "+game.Armor.name,26,new Vector2(-530,-795),new Vector2(430,60),Cyan,new Vector2(1,1));break;
@@ -91,11 +93,12 @@ namespace IronHand
                     Label(panel,"Show your entire OPEN hand. Hold it steady for 3 seconds.\nKeep your wrist and all fingertips inside the camera view.",23,new Vector2(430,-395),new Vector2(1080,100),Muted);
                     calibration=Label(panel,"",25,new Vector2(430,-555),new Vector2(900,70),Cyan);scanFill=Bar(panel,new Vector2(430,-635),new Vector2(650,12),Cyan);
                     Button(panel,"SWITCH LEFT / RIGHT",new Vector2(430,-710),new Vector2(390,66),game.ToggleHand,false);
-                    Button(panel,"RESET AREA",new Vector2(850,-710),new Vector2(270,66),game.ResetArea,false);break;
+                    Button(panel,"RESET AREA",new Vector2(850,-710),new Vector2(270,66),game.ResetArea,false);CoverageControls();break;
                 case GamePhase.Ready:
-                    Modal("SYSTEM SYNCHRONIZED","Aim with the camera. Open your palm to fire.\nClose your hand to recover energy. Keep the area clear.");
+                    Label(panel,"SYSTEM SYNCHRONIZED",42,new Vector2(430,-295),new Vector2(1110,90),White);
+                    Label(panel,"Check the armour over your fingertips and wrist.\nUse + below if skin is showing, then begin target practice.",23,new Vector2(430,-410),new Vector2(1080,100),Muted);
                     Label(panel,game.Notice,21,new Vector2(480,-550),new Vector2(900,60),Cyan);
-                    Button(panel,"BEGIN DEFENSE  →",new Vector2(480,-665),new Vector2(580,80),game.StartRun,true);break;
+                    Button(panel,"BEGIN DEFENSE  →",new Vector2(480,-665),new Vector2(580,80),game.StartRun,true);CoverageControls();break;
                 case GamePhase.Intermission:
                     centerMessage=Label(panel,"",38,new Vector2(500,-390),new Vector2(950,150),White);break;
                 case GamePhase.Paused:
@@ -103,7 +106,7 @@ namespace IronHand
                     Button(panel,"RESUME",new Vector2(480,-610),new Vector2(350,75),game.PauseOrResume,true);
                     Button(panel,"RESET AREA",new Vector2(855,-610),new Vector2(330,75),game.ResetArea,false);
                     Button(panel,"SOUND ON / OFF",new Vector2(480,-710),new Vector2(350,65),game.ToggleSound,false);
-                    Button(panel,"WORKSHOP / END RUN",new Vector2(855,-710),new Vector2(400,65),game.Workshop,false);break;
+                    Button(panel,"WORKSHOP / END RUN",new Vector2(855,-710),new Vector2(400,65),game.Workshop,false);CoverageControls();break;
                 case GamePhase.Results:
                     Label(panel,game.Won?"AREA SECURED":"SYSTEM OFFLINE",54,new Vector2(60,-370),new Vector2(1040,100),White);
                     Label(panel,$"{game.Kills:00} HOSTILES NEUTRALIZED\n+{game.RunGold} GOLD     +{game.RunXP} XP",32,new Vector2(65,-510),new Vector2(970,130),Cyan);
@@ -112,6 +115,13 @@ namespace IronHand
                     Button(panel,"REDEPLOY",new Vector2(550,-790),new Vector2(300,80),game.StartSetup,false);break;
                 case GamePhase.Workshop: DrawWorkshop();break;
             }
+        }
+        void CoverageControls()
+        {
+            coverageLabel=Label(panel,"",21,new Vector2(430,-818),new Vector2(480,48),Cyan);
+            Button(panel,"−",new Vector2(955,-800),new Vector2(72,64),()=>game.AdjustHandCoverage(-.06f),false);
+            Button(panel,"+",new Vector2(1048,-800),new Vector2(72,64),()=>game.AdjustHandCoverage(.06f),false);
+            Label(panel,"Use + if skin shows around the armour.",17,new Vector2(430,-864),new Vector2(700,42),Muted);
         }
         void Modal(string title,string desc)
         {
