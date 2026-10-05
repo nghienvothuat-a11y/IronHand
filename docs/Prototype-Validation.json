@@ -46,6 +46,14 @@
       "interface": "Step 1/2 bottom sheet; confirmation disabled until valid floor hit; Step 2/2 hand scan follows confirmation",
       "inference": "Vision disabled during Home, Placement, Workshop, Paused and Results",
       "hardware_verified": false
+    },
+    "ipad": {
+      "device": "iPad (8th generation) / iPadOS 26.7.1",
+      "source_commit": "81fb6b3",
+      "xcode_build": "passed; signed specifically for connected iPad",
+      "install": "passed",
+      "launch": "blocked by iPad lock screen; user unlock requested",
+      "camera_ar_hand_test": "pending device unlock and camera permission"
     }
   },
   "hardware_acceptance": "Camera authorization, AR session tracking, physical DEPLOY touch, and real hand detections verified in previous build. User remained at floor placement. Updated camera driver and placement UI installed; physical retest pending. Alignment, calibration-to-combat flow, 10-minute thermal test and demo capture remain pending.",
