@@ -1,0 +1,49 @@
+{
+  "license": "CC0",
+  "sources": [
+    {
+      "asset": "aerial_beach_01",
+      "author": "Rob Tuytel",
+      "real_world_width_m": 30,
+      "url": "https://polyhaven.com/a/aerial_beach_01"
+    },
+    {
+      "asset": "leafy_grass",
+      "author": "Charlotte Baglioni",
+      "real_world_width_m": 2,
+      "url": "https://polyhaven.com/a/leafy_grass"
+    }
+  ],
+  "files": [
+    {
+      "file": "aerial_beach_01_diff_4k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/aerial_beach_01/aerial_beach_01_diff_4k.jpg",
+      "bytes": 1614021
+    },
+    {
+      "file": "aerial_beach_01_nor_gl_4k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/aerial_beach_01/aerial_beach_01_nor_gl_4k.jpg",
+      "bytes": 2435079
+    },
+    {
+      "file": "aerial_beach_01_rough_4k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/aerial_beach_01/aerial_beach_01_rough_4k.jpg",
+      "bytes": 1619975
+    },
+    {
+      "file": "leafy_grass_diff_4k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/leafy_grass/leafy_grass_diff_4k.jpg",
+      "bytes": 18554565
+    },
+    {
+      "file": "leafy_grass_nor_gl_4k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/leafy_grass/leafy_grass_nor_gl_4k.jpg",
+      "bytes": 23240822
+    },
+    {
+      "file": "leafy_grass_rough_4k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/leafy_grass/leafy_grass_rough_4k.jpg",
+      "bytes": 9394969
+    }
+  ]
+}

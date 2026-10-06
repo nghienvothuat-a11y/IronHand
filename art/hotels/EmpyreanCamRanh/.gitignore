@@ -1,0 +1,9 @@
+# Generated animation frames, intermediate previews, and extracted FBX textures.
+/renders/drone_frames/
+/exports/*.fbm/
+/qa/*_previews/
+/qa/drone_v*_turn/
+/qa/before_*/
+/qa/*_process*.txt
+/qa/*preview*.mp4
+/qa/*.blend

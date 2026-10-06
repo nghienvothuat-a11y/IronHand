@@ -1,0 +1,97 @@
+{
+  "units": "metres",
+  "scale_status": "photo-estimated, not surveyed",
+  "site_bounds": [
+    -218,
+    248,
+    -300,
+    300
+  ],
+  "towers": [
+    {
+      "id": "A_Land_North",
+      "cx": -70,
+      "cy": 155,
+      "rx": 72,
+      "ry": 87,
+      "floors": 25,
+      "curve_blend": 0.1,
+      "wing_run": 1.75,
+      "wing_negative": 1.01,
+      "wing_positive": 0.97,
+      "crown_negative": 12,
+      "crown_positive": 10
+    },
+    {
+      "id": "B_Sea_North",
+      "cx": 125,
+      "cy": 155,
+      "rx": 69,
+      "ry": 85,
+      "floors": 21,
+      "curve_blend": 0.22,
+      "wing_run": 1.83,
+      "wing_negative": 0.96,
+      "wing_positive": 1.06,
+      "crown_negative": 10,
+      "crown_positive": 13
+    },
+    {
+      "id": "C_Land_South",
+      "cx": -70,
+      "cy": -155,
+      "rx": 73,
+      "ry": 86,
+      "floors": 12,
+      "curve_blend": 0.72,
+      "wing_run": 1.66,
+      "wing_negative": 1.1,
+      "wing_positive": 0.94,
+      "crown_negative": 20,
+      "crown_positive": 27
+    },
+    {
+      "id": "D_Sea_South",
+      "cx": 125,
+      "cy": -155,
+      "rx": 70,
+      "ry": 87,
+      "floors": 10,
+      "curve_blend": 0.86,
+      "wing_run": 1.72,
+      "wing_negative": 1.12,
+      "wing_positive": 0.95,
+      "crown_negative": 23,
+      "crown_positive": 29
+    }
+  ],
+  "floor_height": 3.05,
+  "podium_height": 5.2,
+  "note": "Spatial tower IDs. South heights follow the actual 2026 official photos, differing from older marketing renders. Counts are modelling estimates; exact dimensions require drawings.",
+  "pavilion_direction": {
+    "status": "outward, away from pool",
+    "control_points_xy": [
+      [
+        197.84800720214844,
+        -242.0
+      ],
+      [
+        211,
+        -252
+      ],
+      [
+        220,
+        -269
+      ],
+      [
+        223,
+        -284
+      ],
+      [
+        222,
+        -296
+      ]
+    ],
+    "reference": "User Google Maps screenshots and resort_map.jpg; estimated dimensions"
+  }
+}

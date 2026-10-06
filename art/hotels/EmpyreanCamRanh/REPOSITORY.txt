@@ -1,0 +1,40 @@
+EMPYREAN CAM RANH — REPOSITORY PACKAGE
+
+This folder is a snapshot of the exterior hotel project and delivered drone clip.
+Open source/Empyrean_CamRanh_Exterior.blend for the static scene, or
+source/Empyrean_CamRanh_Drone_20s.blend for the animated camera.
+
+DELIVERABLES
+exports/Empyrean_CamRanh_Exterior_Drone.fbx — exterior and baked drone camera.
+exports/Empyrean_Exterior_Core.glb — portable core hotel and landscaping.
+renders/Empyrean_CamRanh_Drone_20s.mp4 — 20 seconds, 1920x1080, 24 fps.
+renders/Empyrean_Drone_Storyboard.jpg — camera route contact sheet.
+renders/01, 02, 06, 07 PNG images — final architectural still renders.
+exports/READ_ME_Drone_and_FBX.txt — animation and import details.
+README.txt — modelling scope, four distinct towers, references and limitations.
+
+GIT LFS
+Large binary assets in this folder use Git LFS. After cloning the branch:
+  git lfs install
+  git lfs pull
+Use an LFS-enabled clone to retrieve real assets rather than pointer files.
+
+SOURCE SCRIPTS
+source/stages/ and tools/ preserve the original modelling/export/render scripts.
+These scripts currently use the original working folder:
+  /Users/mrk/3D-Assets/EmpyreanCamRanh
+Before running scripts from a different checkout, update the ROOT/root/R paths
+and local Blender/FFmpeg paths as appropriate. The delivered .blend files have
+packed textures and can be opened directly without rebuilding or running scripts.
+Some historical QA reports also refer to the original working folder.
+
+PACKAGE CONTENTS
+Includes source scenes, textures with credits, references, final exports,
+finished renders, scripts and final QA reports. Original files are unchanged.
+Raw frame sequences, test renders, process logs and obsolete Blender backups
+are excluded. qa/repository_package_manifest.json records hashes of the copied files.
+
+The model covers exterior architecture only; its measurements are photo-based
+estimates, not a surveyed CAD model. See README.txt for the modelling assumptions.
+Texture credits are in source/textures/licenses.json; reference photographs are
+identified in references/reference_manifest.json and are not used as textures.

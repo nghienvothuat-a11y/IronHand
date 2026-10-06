@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-05",
+  "property": "The Empyrean Cam Ranh Beach Resort",
+  "sources": {
+    "aerial_day.jpg": {
+      "url": "https://baokhanhhoa.vn/file/e7837c02857c8ca30185a8c39b582c03/012024/the_empyrean_cam_ranh_20240117092208.jpg",
+      "use": "visual reference only; not used as a texture"
+    },
+    "resort_map.jpg": {
+      "url": "https://luganoresort.com/wp-content/uploads/2026/09/2aOboQw2dWJxXQNoytycUjOD3YsGIHUYf4ccrpa4.jpg",
+      "use": "visual reference only; not used as a texture"
+    },
+    "aerial_bird.webp": {
+      "url": "https://cdn1.ivivu.com/iVivu/2022/11/18/09/cam3-bird-cr.webp?o=png",
+      "use": "visual reference only; not used as a texture",
+      "limitation": "Promotional render or diagram; photos take priority where designs conflict."
+    },
+    "plan_one.webp": {
+      "url": "https://fd26.techcoop.com/assets/images/resort-map-1.17e249d9.webp",
+      "use": "visual reference only; not used as a texture"
+    },
+    "plan_two.webp": {
+      "url": "https://fd26.techcoop.com/assets/images/resort-map-2.03e1d647.webp",
+      "use": "visual reference only; not used as a texture",
+      "limitation": "Promotional render or diagram; photos take priority where designs conflict."
+    },
+    "aerial_techcoop.webp": {
+      "url": "https://fd26.techcoop.com/assets/images/empyrean-aerial.webp",
+      "use": "visual reference only; not used as a texture"
+    },
+    "official_overview_2026_10.jpg": {
+      "url": "https://theempyreancamranhresort.com/Uploads/Sliders/ECR_Resort-Overview_2026-%2810%29.jpg",
+      "use": "visual reference only; not used as a texture",
+      "priority": "primary official photographic reference"
+    },
+    "official_overview_2026_12.jpg": {
+      "url": "https://theempyreancamranhresort.com/Uploads/Sliders/ECR_Resort-Overview_2026-%2812%29.jpg",
+      "use": "visual reference only; not used as a texture",
+      "priority": "primary official photographic reference"
+    },
+    "supplier_facade_3.jpg": {
+      "url": "https://amy.vn/pictures/files/projects/chung-cu/the-arena-cam-ranh/du-an-khach-san-va-resort-the-arena-cam-ranh-3.jpg",
+      "use": "visual reference only; not used as a texture",
+      "limitation": "Promotional render or diagram; photos take priority where designs conflict."
+    },
+    "supplier_overview.jpg": {
+      "url": "https://amy.vn/pictures/files/projects/chung-cu/the-arena-cam-ranh/du-an-khach-san-va-resort-the-arena-cam-ranh.jpg",
+      "use": "visual reference only; not used as a texture",
+      "limitation": "Promotional render or diagram; photos take priority where designs conflict."
+    },
+    "official_overview_2026_11.jpg": {
+      "url": "https://theempyreancamranhresort.com/Uploads/Sliders/ECR_Resort-Overview_2026-%2811%29.jpg",
+      "use": "visual reference only; not used as a texture",
+      "priority": "primary official photographic reference"
+    },
+    "official_pool_aerial.jpg": {
+      "url": "https://theempyreancamranhresort.com/uploads/AttachmentsPhoto/drliC7LxYsM=/6a734bf0-c243-4063-bea8-f1a03320152d.jpg",
+      "use": "visual reference only; not used as a texture",
+      "priority": "primary official photographic reference"
+    },
+    "official_pool_detail.jpg": {
+      "url": "https://theempyreancamranhresort.com/uploads/AttachmentsPhoto/drliC7LxYsM=/3503403c-57c1-43db-826d-798ea3b62a83.jpg",
+      "use": "visual reference only; not used as a texture",
+      "priority": "primary official photographic reference"
+    },
+    "user_maps_actual_aerial.png": {
+      "source": "User-supplied screenshot; actual aerial photo",
+      "priority": "high for building differentiation",
+      "use": "visual reference only"
+    },
+    "user_maps_reverse_overview.png": {
+      "source": "User-supplied screenshot; promotional perspective, not as-built proof",
+      "priority": "high for building differentiation",
+      "use": "visual reference only"
+    }
+  },
+  "accuracy": "Photo-based reconstruction. No measured CAD, photogrammetry, survey, or reliable as-built floor schedules provided."
+}

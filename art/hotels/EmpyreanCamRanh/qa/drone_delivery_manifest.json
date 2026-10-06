@@ -1,0 +1,190 @@
+{
+  "video": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "mime_codec_string": "avc1.640032",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1080,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "16:9",
+        "pix_fmt": "yuv420p",
+        "level": 50,
+        "color_range": "tv",
+        "color_space": "bt709",
+        "color_transfer": "iec61966-2-1",
+        "color_primaries": "bt709",
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/12288",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 245760,
+        "duration": "20.000000",
+        "bit_rate": "11300363",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "480",
+        "extradata_size": 51,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "encoder": "Lavc63.1.101 libx264"
+        }
+      }
+    ],
+    "format": {
+      "filename": "/Users/mrk/3D-Assets/EmpyreanCamRanh/renders/Empyrean_CamRanh_Drone_20s.encoding.mp4",
+      "nb_streams": 1,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "20.000000",
+      "size": "28256645",
+      "bit_rate": "11302658",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "title": "The Empyrean Cam Ranh - 20s Drone Tour",
+        "encoder": "Lavf63.1.101"
+      }
+    }
+  },
+  "checks": {
+    "png_frames_valid": 480,
+    "full_video_decode": true,
+    "fbx_roundtrip": {
+      "passed": true,
+      "objects": 2112,
+      "mesh_objects": 2111,
+      "cameras": 1,
+      "images": 5,
+      "missing_objects": [],
+      "camera_positions": [
+        {
+          "frame": 1,
+          "location_error_m": 0.0,
+          "rotation_error_deg": 0.0
+        },
+        {
+          "frame": 92,
+          "location_error_m": 0.0,
+          "rotation_error_deg": 0.0
+        },
+        {
+          "frame": 157,
+          "location_error_m": 0.0,
+          "rotation_error_deg": 0.0
+        },
+        {
+          "frame": 229,
+          "location_error_m": 0.0,
+          "rotation_error_deg": 0.0
+        },
+        {
+          "frame": 306,
+          "location_error_m": 0.0,
+          "rotation_error_deg": 0.0
+        },
+        {
+          "frame": 375,
+          "location_error_m": 0.0,
+          "rotation_error_deg": 0.0
+        },
+        {
+          "frame": 410,
+          "location_error_m": 0.0,
+          "rotation_error_deg": 0.0
+        },
+        {
+          "frame": 438,
+          "location_error_m": 0.0,
+          "rotation_error_deg": 0.0
+        },
+        {
+          "frame": 480,
+          "location_error_m": 0.0,
+          "rotation_error_deg": 0.0
+        }
+      ],
+      "material_index_errors": [],
+      "material_layouts_verified": 55,
+      "embedded_texture_files": [
+        "/Users/mrk/3D-Assets/EmpyreanCamRanh/exports/Empyrean_CamRanh_Exterior_Drone.fbm/aerial_beach_01_diff_4k.jpg",
+        "/Users/mrk/3D-Assets/EmpyreanCamRanh/exports/Empyrean_CamRanh_Exterior_Drone.fbm/aerial_beach_01_nor_gl_4k.jpg",
+        "/Users/mrk/3D-Assets/EmpyreanCamRanh/exports/Empyrean_CamRanh_Exterior_Drone.fbm/aerial_beach_01_rough_4k.jpg",
+        "/Users/mrk/3D-Assets/EmpyreanCamRanh/exports/Empyrean_CamRanh_Exterior_Drone.fbm/leafy_grass_nor_gl_4k.jpg",
+        "/Users/mrk/3D-Assets/EmpyreanCamRanh/exports/Empyrean_CamRanh_Exterior_Drone.fbm/leafy_grass_rough_4k.jpg"
+      ],
+      "fps": 24
+    },
+    "camera_route": {
+      "samples": 480,
+      "segment_surface_intersections": [],
+      "closest_surface": null,
+      "max_speed_mps": 209.5482559164289,
+      "max_turn_degrees_per_second": 125.43088823896187,
+      "nearby_samples_under_3m": []
+    }
+  },
+  "files": [
+    {
+      "path": "/Users/mrk/3D-Assets/EmpyreanCamRanh/renders/Empyrean_CamRanh_Drone_20s.mp4",
+      "bytes": 28256645,
+      "sha256": "0b325bed2731db84b76531a5636a17bcf127c066113865cb237ba460f79ced75"
+    },
+    {
+      "path": "/Users/mrk/3D-Assets/EmpyreanCamRanh/exports/Empyrean_CamRanh_Exterior_Drone.fbx",
+      "bytes": 116082188,
+      "sha256": "2f4694d989c65d1ec31e0c6fb583733f080f713e76ddf45287fe25d8b5d567b5"
+    },
+    {
+      "path": "/Users/mrk/3D-Assets/EmpyreanCamRanh/source/Empyrean_CamRanh_Drone_20s.blend",
+      "bytes": 71111521,
+      "sha256": "96f8c78ed2f55ede0189ef0e24f6043b32ab8c60d3134664aa48cfe3614e157c"
+    },
+    {
+      "path": "/Users/mrk/3D-Assets/EmpyreanCamRanh/renders/Empyrean_Drone_Storyboard.jpg",
+      "bytes": 643537,
+      "sha256": "2ea3dabdd8354964dfb55590ea88d1cf78ccefca8dcb4d314cd82ab29d5cd8eb"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "checks": [
+    "GLB 2.0 header and length",
+    "four-tower nodes and distinct pavilion",
+    "Blender round-trip import",
+    "finite world coordinates"
+  ],
+  "bytes": 80270300,
+  "gltf_meshes": 52,
+  "gltf_nodes": 1271,
+  "gltf_materials": 25,
+  "gltf_images": 2,
+  "imported_mesh_objects": 1271,
+  "world_bounds_min": [
+    -252.0,
+    -775.0,
+    -1.600000023841858
+  ],
+  "world_bounds_max": [
+    304.5,
+    778.5,
+    83.0199966430664
+  ]
+}

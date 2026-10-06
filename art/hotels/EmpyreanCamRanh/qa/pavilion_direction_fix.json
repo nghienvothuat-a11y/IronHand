@@ -1,0 +1,72 @@
+{
+  "tower_meshes_unchanged": 24,
+  "pavilion_control_points": [
+    [
+      197.84800720214844,
+      -242.0
+    ],
+    [
+      211,
+      -252
+    ],
+    [
+      220,
+      -269
+    ],
+    [
+      223,
+      -284
+    ],
+    [
+      222,
+      -296
+    ]
+  ],
+  "attachment_unchanged": true,
+  "direction": "away from courtyard pool, south along the seaward boundary",
+  "road_loop_xy": [
+    [
+      -208,
+      -280
+    ],
+    [
+      178,
+      -280
+    ],
+    [
+      189,
+      -306
+    ],
+    [
+      204,
+      -313
+    ],
+    [
+      231,
+      -313
+    ],
+    [
+      244,
+      -300
+    ],
+    [
+      244,
+      -220
+    ],
+    [
+      234,
+      -198
+    ],
+    [
+      234,
+      280
+    ],
+    [
+      -208,
+      280
+    ]
+  ],
+  "minimum_road_clearance_metres": 6.699,
+  "road_joins_continuous": true,
+  "distance_from_pool_increases": true
+}

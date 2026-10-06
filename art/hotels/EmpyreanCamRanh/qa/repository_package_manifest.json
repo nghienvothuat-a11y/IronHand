@@ -1,0 +1,382 @@
+{
+  "packaged_on": "2026-10-06",
+  "files": [
+    {
+      "path": "README.txt",
+      "bytes": 6328,
+      "sha256": "c1d48e9016d8db387cb5b697a92520f36cc741a670661e11a56f15884e66f22d"
+    },
+    {
+      "path": "source/Empyrean_CamRanh_Drone_20s.blend",
+      "bytes": 71111521,
+      "sha256": "96f8c78ed2f55ede0189ef0e24f6043b32ab8c60d3134664aa48cfe3614e157c"
+    },
+    {
+      "path": "source/parameters.json",
+      "bytes": 1982,
+      "sha256": "3b648d317426001abbf8ad82512c06ccd4fe477291009e97e23c160ea9ac4202"
+    },
+    {
+      "path": "source/Empyrean_CamRanh_Exterior.blend",
+      "bytes": 71067098,
+      "sha256": "dd33d17dc613cead27d31dd525a716d52c33ed1a0161e5f9eb9fa6bbfae0a95a"
+    },
+    {
+      "path": "source/textures/aerial_beach_01_rough_4k.jpg",
+      "bytes": 1619975,
+      "sha256": "ac6ab635a53cc1e9bf3d33b5b0a4fc62aec5830660271cbc0e0e6ee778a1a95b"
+    },
+    {
+      "path": "source/textures/licenses.json",
+      "bytes": 1545,
+      "sha256": "6d4365df425ebce8bfb0e92fc75e5dde14af72169f8edba66c63a4dfaae79563"
+    },
+    {
+      "path": "source/textures/aerial_beach_01_diff_4k.jpg",
+      "bytes": 1614021,
+      "sha256": "231f7dfdbc79ec5ccb128616ed601aacc2b323204148480114bf662b09f79ea8"
+    },
+    {
+      "path": "source/textures/leafy_grass_diff_4k.jpg",
+      "bytes": 18554565,
+      "sha256": "0e57a28949211e2f4a728b094598a4470cce25bc07e138b9bae295f97c5d67f1"
+    },
+    {
+      "path": "source/textures/leafy_grass_nor_gl_4k.jpg",
+      "bytes": 23240822,
+      "sha256": "c496fed0def70f9ad1238d93851709f36ca644b705a94eb3b7b50ad6805298fc"
+    },
+    {
+      "path": "source/textures/aerial_beach_01_nor_gl_4k.jpg",
+      "bytes": 2435079,
+      "sha256": "0eeff8b0899968fce619b2d0d39c656df13149e319add95041243652596242fd"
+    },
+    {
+      "path": "source/textures/leafy_grass_rough_4k.jpg",
+      "bytes": 9394969,
+      "sha256": "1b6345d2518392965f80d18c5bbe3d5db0e32c6693321f6e17f1d007b1093351"
+    },
+    {
+      "path": "source/stages/11_towers_asbuilt.py",
+      "bytes": 6659,
+      "sha256": "c26471ed757d382e811ee446b441d1c8557a8fdf2d00e2b8d9f3114deeb85779"
+    },
+    {
+      "path": "source/stages/60_polish.py",
+      "bytes": 3174,
+      "sha256": "c01fe6cdd305a52210ad8d40bbc86057c50daf7908dd8ac5a1f449e671dbffda"
+    },
+    {
+      "path": "source/stages/30_landscape.py",
+      "bytes": 7935,
+      "sha256": "6aa6e0eb99b718453a62a1a6b65957ff85b83b76ca862b4b9117229dd3dc6151"
+    },
+    {
+      "path": "source/stages/20_site.py",
+      "bytes": 9317,
+      "sha256": "829ac556bcab30c80397c6ca3d34fb6464a7e79df6d247b4f12f2f0e4f5a47c5"
+    },
+    {
+      "path": "source/stages/10_towers.py",
+      "bytes": 5090,
+      "sha256": "0d7fb607ab3f98f90afb9b55f23ac9b74093ed65c2bf35cb6e1f27be771c0823"
+    },
+    {
+      "path": "source/stages/85_pavilion_clearance.py",
+      "bytes": 900,
+      "sha256": "943a89287edd18d307215b6017e5f27a2b7c0d43332d22259cbe3b1754ab97c4"
+    },
+    {
+      "path": "source/stages/80_final_detail.py",
+      "bytes": 3771,
+      "sha256": "6734f17130b88957efd1362c637ec9491287ea77ce2f8ca0d8d8e059f9cfed54"
+    },
+    {
+      "path": "source/stages/00_common.py",
+      "bytes": 9532,
+      "sha256": "c2645aa00154a08943d4ba758e0a42e99c9ce96623ddeb4304441f7f1a341ab8"
+    },
+    {
+      "path": "source/stages/70_materials_and_context.py",
+      "bytes": 3847,
+      "sha256": "cbc0e6ea6157e03f0d0d4acc4ee3f1e8100585a802191e669281e29c0e770e01"
+    },
+    {
+      "path": "source/stages/40_presentation.py",
+      "bytes": 2848,
+      "sha256": "d3bb8f9803ddde978c2858db8cf476c7e48f3c07fb892297cc246be4f2d8415f"
+    },
+    {
+      "path": "source/stages/50_finish.py",
+      "bytes": 1694,
+      "sha256": "790f3ead241ce5912119edc1e9b7c2f86a8f77a7cdc254e3381db0facf29af8c"
+    },
+    {
+      "path": "source/stages/12_pavilion.py",
+      "bytes": 2817,
+      "sha256": "388fc5a22d97979aea3b8c270cccc664ab5cb05d18451ba67eb8206bebc847b7"
+    },
+    {
+      "path": "references/aerial_day.jpg",
+      "bytes": 1992623,
+      "sha256": "1d184eb5253d3e5e80805baab7e92528872c3ce2dd80be107dd53f4498c82d4e"
+    },
+    {
+      "path": "references/aerial_bird.webp",
+      "bytes": 261534,
+      "sha256": "3e68a2f032a94d5cfd480e0c4cdf6e0150c19124fbef3fb15de3ee05378c7665"
+    },
+    {
+      "path": "references/official_overview_2026_11.jpg",
+      "bytes": 930356,
+      "sha256": "499c4d053bd28386ff5d42b89ccfe0a473ca2eb6d70cda5922605ee7f8107e51"
+    },
+    {
+      "path": "references/official_overview_2026_10.jpg",
+      "bytes": 597031,
+      "sha256": "069d9b0355daa505ab3c70ffb39ff766e30f51332c03d77c21022af42a10374e"
+    },
+    {
+      "path": "references/sources.json",
+      "bytes": 686,
+      "sha256": "b1f001e65f175423741d6c5647f6ee6b9d8a12b4e3530bee1e4e198f8308cc3a"
+    },
+    {
+      "path": "references/resort_map.jpg",
+      "bytes": 1261001,
+      "sha256": "090933858e3d4380ee95213908154e0ef5b201693afbf328e92844f0e3e2e319"
+    },
+    {
+      "path": "references/official_overview_2026_12.jpg",
+      "bytes": 670787,
+      "sha256": "145a18a9c05687ec24de2577251f59603a806f9e1d8745d48eb2d8844b19015c"
+    },
+    {
+      "path": "references/aerial_techcoop.webp",
+      "bytes": 178256,
+      "sha256": "881051857dfa5b58482c578ef9a00c4587d5b78a0fd3e38afbacb6b0022c5bd3"
+    },
+    {
+      "path": "references/supplier_facade_3.jpg",
+      "bytes": 257906,
+      "sha256": "bafd43d158846e10f888c25326df4fc07ece69ca13ce51d164c4b3bd25cfdf43"
+    },
+    {
+      "path": "references/user_maps_reverse_overview.png",
+      "bytes": 5785309,
+      "sha256": "4908f85c3f6436994e8b2acb2eda6fdccd0d6a94fca2d793ea026e1f00044b80"
+    },
+    {
+      "path": "references/official_pool_aerial.jpg",
+      "bytes": 2476391,
+      "sha256": "4e6fc66ec4f072d2a86ab69dbe9bb51aca252d68b658dcb2999c06cb68f43f7e"
+    },
+    {
+      "path": "references/supplier_overview.jpg",
+      "bytes": 372702,
+      "sha256": "421b6836b9d06665d35e3de7581c469a1ceedeb5258fe395f03f156ccce4875d"
+    },
+    {
+      "path": "references/plan_two.webp",
+      "bytes": 1481708,
+      "sha256": "03e1d647722c298852100cdfd69c71b16931c4d96f0fa361369af6a9d426797c"
+    },
+    {
+      "path": "references/reference_manifest.json",
+      "bytes": 4043,
+      "sha256": "7eb433ad26205449ef2c6eb2bdae53531148d36fb141ca54cffb2e07d732bec2"
+    },
+    {
+      "path": "references/additional_sources.json",
+      "bytes": 981,
+      "sha256": "bada7046420004a1e02400344a1ac77b41b084a42c91dc780e862edba1b1b25d"
+    },
+    {
+      "path": "references/plan_one.webp",
+      "bytes": 260502,
+      "sha256": "17e249d94c4bb5d546dc5ea83f05f6179c1dc964c41ff491846556cf89cd5462"
+    },
+    {
+      "path": "references/user_maps_actual_aerial.png",
+      "bytes": 3199040,
+      "sha256": "84e0a4a6ff034a8c3ff67744d31c09aa095d8e989a9a2a4b86018cca72954003"
+    },
+    {
+      "path": "references/official_pool_detail.jpg",
+      "bytes": 1637767,
+      "sha256": "5430e17584c4130bb8ab3452b8c765947447929817a6e91de8c1f41f835caa3b"
+    },
+    {
+      "path": "tools/benchmark_drone_cycles.py",
+      "bytes": 752,
+      "sha256": "fe4d9e060e2b9ba5f3fcbc0e2bf6f8a19647fc24472e6077128ed03180f7a2f1"
+    },
+    {
+      "path": "tools/create_drone.py",
+      "bytes": 5569,
+      "sha256": "8905d7ae875cd1e647dada5572c9fda8680f11c351dbd84e969f2dbd995c898d"
+    },
+    {
+      "path": "tools/render_scene.py",
+      "bytes": 1137,
+      "sha256": "b3fc1b8379927edc0faaa7bad063494e12faf385e589a97ef09e2f4063fde8b8"
+    },
+    {
+      "path": "tools/package_scene.py",
+      "bytes": 2841,
+      "sha256": "ba6e04953150db107ae943978b8cdaceeb5d616a9ac487e869b029e7ffe2e9a1"
+    },
+    {
+      "path": "tools/final_render.py",
+      "bytes": 1860,
+      "sha256": "86b73aa701bc1d3397ce4e9ade23987327449f8f042454b311b38ac5ad377bce"
+    },
+    {
+      "path": "tools/render_drone.py",
+      "bytes": 891,
+      "sha256": "5caa2583bbf2f51ef4e26284d9e384cf1cccbfc8c2691d114e17861111f42334"
+    },
+    {
+      "path": "tools/validate_export.py",
+      "bytes": 1519,
+      "sha256": "4806d2f346e0e23ffa4d445238742b112e93eee2668fb24ec1a15d9fa2814801"
+    },
+    {
+      "path": "tools/validate_fbx.py",
+      "bytes": 2352,
+      "sha256": "b221f2901831f85b376d7d9cb8f26e6a123b8c2632d0b90361e6e7af14e64b93"
+    },
+    {
+      "path": "tools/audit_drone_route.py",
+      "bytes": 2215,
+      "sha256": "a93707f8278eefcb3ea1e021519e61217e88b4ace04c610888510574f558986e"
+    },
+    {
+      "path": "tools/rebuild_scene.py",
+      "bytes": 949,
+      "sha256": "b22154ee60f9b97c6bf40e80b2ee72e7a4d50b033a258c1a18e650b7014101f4"
+    },
+    {
+      "path": "tools/finish_drone.py",
+      "bytes": 2702,
+      "sha256": "ae6f2f4f67fd8a4e0e1951d81ee094cd4206e153fee31188c55143cbb0bd3f0a"
+    },
+    {
+      "path": "tools/render_revision.py",
+      "bytes": 779,
+      "sha256": "f160a6e5f60eebf580eea41be560a4fd800ceb8d4358a8295a2ffd5e07aefa01"
+    },
+    {
+      "path": "tools/fix_pavilion_direction.py",
+      "bytes": 3212,
+      "sha256": "749123e2a77dab87210d8cb639f2d183fe75e6587b1de5a48e3afdb69e9aeac4"
+    },
+    {
+      "path": "tools/export_drone_fbx.py",
+      "bytes": 3020,
+      "sha256": "dc7ee66c2cee6571cc3b39974e40ae56ba4b311d97536e43eaced82f2d69d193",
+      "original_sha256": "4b0c200ce2a06528fda891d7fe8762ed925151ab5f1b058373f335caf9017cae",
+      "packaging_change": "Removed one trailing space; no behavior change."
+    },
+    {
+      "path": "exports/Empyrean_Exterior_Core.glb",
+      "bytes": 80270300,
+      "sha256": "c23519264f7dee2558066556af972468a5e9a747881d0fdc2760a42845f8bb9c"
+    },
+    {
+      "path": "exports/READ_ME_Drone_and_FBX.txt",
+      "bytes": 2051,
+      "sha256": "cbb519eb569bf2c18495a733485584673a5c8972a3535d45cef00b2f6c491e02"
+    },
+    {
+      "path": "exports/Empyrean_CamRanh_Exterior_Drone.fbx",
+      "bytes": 116082188,
+      "sha256": "2f4694d989c65d1ec31e0c6fb583733f080f713e76ddf45287fe25d8b5d567b5"
+    },
+    {
+      "path": "renders/Empyrean_CamRanh_Drone_20s.mp4",
+      "bytes": 28256645,
+      "sha256": "0b325bed2731db84b76531a5636a17bcf127c066113865cb237ba460f79ced75"
+    },
+    {
+      "path": "renders/01_Aerial_from_land.png",
+      "bytes": 8127028,
+      "sha256": "6f413e80d491b3efe16d927ff3096b62643a0cfdad979b9208680c8aa47b0a6b"
+    },
+    {
+      "path": "renders/Empyrean_Drone_Storyboard.jpg",
+      "bytes": 643537,
+      "sha256": "2ea3dabdd8354964dfb55590ea88d1cf78ccefca8dcb4d314cd82ab29d5cd8eb"
+    },
+    {
+      "path": "renders/07_Pavilion_direction_detail.png",
+      "bytes": 8523674,
+      "sha256": "bc1d119aaa6ff5c9e4ba8077740a304a6278094f8e39b39c47b2da50a84c1346"
+    },
+    {
+      "path": "renders/02_Sea_facing_aerial.png",
+      "bytes": 8326747,
+      "sha256": "6753b2bbf0767e964d99b04c9362a6a5551a09f7220642798fb8b6b584bee532"
+    },
+    {
+      "path": "renders/06_North_sea_aerial.png",
+      "bytes": 8532717,
+      "sha256": "1f2b1f61c2ddbcfbc7562b390ad0f39990c6b7a5f97d2aa07f348462610ad35f"
+    },
+    {
+      "path": "qa/delivery_manifest.json",
+      "bytes": 1178,
+      "sha256": "12292c5d9a66b4d2062de2bd239b6ada78b9cc795bfdf5e7375ed5e508f19dae"
+    },
+    {
+      "path": "qa/drone_collision_audit.json",
+      "bytes": 210,
+      "sha256": "520e1e9fd36f42d65708d2da36a09e6f5b94e92b662810656f1358048d4abf86"
+    },
+    {
+      "path": "qa/drone_delivery_manifest.json",
+      "bytes": 5805,
+      "sha256": "7bfed22bffb81b4c7367dd538ed87834088316e0ea38166b0f70551993f1348a"
+    },
+    {
+      "path": "qa/drone_route.json",
+      "bytes": 202916,
+      "sha256": "814236d3937a690155145da70c9460edc636030383355ce3c7013af1a5d8c4b0"
+    },
+    {
+      "path": "qa/drone_route_plan.png",
+      "bytes": 33514,
+      "sha256": "facd7ed0d749e6465510038d6c48ab5c5197d30818af83eccb1b489fd15be6bb"
+    },
+    {
+      "path": "qa/export_validation.json",
+      "bytes": 475,
+      "sha256": "f8d17a470f049281f8e38a29bca6bb330bc0c3c51b12e573162aa441eb20af9d"
+    },
+    {
+      "path": "qa/fbx_export_manifest.json",
+      "bytes": 65350,
+      "sha256": "3bf6b7c64f0823a10b876d2d9c64a7bc13baa22576574aaff17c2d1a57c1c728"
+    },
+    {
+      "path": "qa/fbx_roundtrip_validation.json",
+      "bytes": 1699,
+      "sha256": "32bb217d3170847d9bb86a5a3061b290e0cef7ca009bb4e44ca607098864f371"
+    },
+    {
+      "path": "qa/pavilion_direction_fix.json",
+      "bytes": 859,
+      "sha256": "02305fce83549324bf5f06d479e0a6bd138013ad1b751f147c573e9ab7ba093b"
+    },
+    {
+      "path": "qa/pavilion_planting_clearance.json",
+      "bytes": 233,
+      "sha256": "4cf5748abde2c08fc28ddfbda0c21b8ac82b5a58afd53a890a7f6eb99b18f270"
+    },
+    {
+      "path": "qa/scene_audit.json",
+      "bytes": 2064,
+      "sha256": "72e40cf9e03425ff1127a8ea63f5758a2d6df3749a90d5ba520c4bbd6562ba92"
+    }
+  ]
+}

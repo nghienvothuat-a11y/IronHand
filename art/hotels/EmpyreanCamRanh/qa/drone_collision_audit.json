@@ -1,0 +1,8 @@
+{
+  "samples": 480,
+  "segment_surface_intersections": [],
+  "closest_surface": null,
+  "max_speed_mps": 209.5482559164289,
+  "max_turn_degrees_per_second": 125.43088823896187,
+  "nearby_samples_under_3m": []
+}

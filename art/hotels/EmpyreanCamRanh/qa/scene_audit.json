@@ -1,0 +1,91 @@
+{
+  "scene": "Empyrean_Exterior",
+  "units": "metres",
+  "photo_based_not_surveyed": true,
+  "objects": 2119,
+  "meshes": 55,
+  "towers": {
+    "EMP_10_A_Land_North": {
+      "objects": 6,
+      "bounds_min": [
+        -153.60000610351562,
+        56.445980072021484,
+        0.4000000059604645
+      ],
+      "bounds_max": [
+        4.473693370819092,
+        253.636474609375,
+        83.0199966430664
+      ],
+      "mesh_faces": 74320
+    },
+    "EMP_10_B_Sea_North": {
+      "objects": 6,
+      "bounds_min": [
+        44.400001525878906,
+        58.64667892456055,
+        0.4000000059604645
+      ],
+      "bounds_max": [
+        208.73167419433594,
+        251.73092651367188,
+        70.81999969482422
+      ],
+      "mesh_faces": 64117
+    },
+    "EMP_10_C_Land_South": {
+      "objects": 6,
+      "bounds_min": [
+        -154.60000610351562,
+        -252.5941925048828,
+        0.4000000059604645
+      ],
+      "bounds_max": [
+        8.25248908996582,
+        -56.86442565917969,
+        43.369998931884766
+      ],
+      "mesh_faces": 45150
+    },
+    "EMP_10_D_Sea_South": {
+      "objects": 8,
+      "bounds_min": [
+        43.400001525878906,
+        -296.7866516113281,
+        0.4000000059604645
+      ],
+      "bounds_max": [
+        231.20513916015625,
+        -55.755897521972656,
+        37.27000045776367
+      ],
+      "mesh_faces": 40530
+    }
+  },
+  "unique_mesh_faces": 292357,
+  "rendered_mesh_faces": 5698544,
+  "packed_textures": [
+    "aerial_beach_01_diff_4k.jpg",
+    "aerial_beach_01_nor_gl_4k.jpg",
+    "aerial_beach_01_rough_4k.jpg",
+    "leafy_grass_diff_4k.jpg",
+    "leafy_grass_nor_gl_4k.jpg",
+    "leafy_grass_rough_4k.jpg"
+  ],
+  "revision": "Outward pavilion curve corrected 2026-10-05",
+  "pavilion_direction_audit": "pavilion_direction_fix.json",
+  "render_setup": {
+    "engine": "Cycles",
+    "resolution": [
+      3000,
+      2000
+    ],
+    "samples": 96,
+    "camera_names": [
+      "01_Aerial_from_land",
+      "02_Sea_facing_aerial",
+      "06_North_sea_aerial",
+      "07_Pavilion_direction_detail"
+    ]
+  }
+}

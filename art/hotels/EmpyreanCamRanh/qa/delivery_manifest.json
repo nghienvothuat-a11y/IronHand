@@ -1,0 +1,48 @@
+[
+  {
+    "file": "source/Empyrean_CamRanh_Exterior.blend",
+    "bytes": 71067098,
+    "sha256": "dd33d17dc613cead27d31dd525a716d52c33ed1a0161e5f9eb9fa6bbfae0a95a"
+  },
+  {
+    "file": "exports/Empyrean_Exterior_Core.glb",
+    "bytes": 80270300,
+    "sha256": "c23519264f7dee2558066556af972468a5e9a747881d0fdc2760a42845f8bb9c"
+  },
+  {
+    "file": "renders/01_Aerial_from_land.png",
+    "bytes": 8127028,
+    "sha256": "6f413e80d491b3efe16d927ff3096b62643a0cfdad979b9208680c8aa47b0a6b",
+    "resolution": [
+      3000,
+      2000
+    ]
+  },
+  {
+    "file": "renders/02_Sea_facing_aerial.png",
+    "bytes": 8326747,
+    "sha256": "6753b2bbf0767e964d99b04c9362a6a5551a09f7220642798fb8b6b584bee532",
+    "resolution": [
+      3000,
+      2000
+    ]
+  },
+  {
+    "file": "renders/06_North_sea_aerial.png",
+    "bytes": 8532717,
+    "sha256": "1f2b1f61c2ddbcfbc7562b390ad0f39990c6b7a5f97d2aa07f348462610ad35f",
+    "resolution": [
+      3000,
+      2000
+    ]
+  },
+  {
+    "file": "renders/07_Pavilion_direction_detail.png",
+    "bytes": 8523674,
+    "sha256": "bc1d119aaa6ff5c9e4ba8077740a304a6278094f8e39b39c47b2da50a84c1346",
+    "resolution": [
+      3000,
+      2000
+    ]
+  }
+]

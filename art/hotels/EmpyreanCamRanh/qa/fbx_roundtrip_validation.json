@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "objects": 2112,
+  "mesh_objects": 2111,
+  "cameras": 1,
+  "images": 5,
+  "missing_objects": [],
+  "camera_positions": [
+    {
+      "frame": 1,
+      "location_error_m": 0.0,
+      "rotation_error_deg": 0.0
+    },
+    {
+      "frame": 92,
+      "location_error_m": 0.0,
+      "rotation_error_deg": 0.0
+    },
+    {
+      "frame": 157,
+      "location_error_m": 0.0,
+      "rotation_error_deg": 0.0
+    },
+    {
+      "frame": 229,
+      "location_error_m": 0.0,
+      "rotation_error_deg": 0.0
+    },
+    {
+      "frame": 306,
+      "location_error_m": 0.0,
+      "rotation_error_deg": 0.0
+    },
+    {
+      "frame": 375,
+      "location_error_m": 0.0,
+      "rotation_error_deg": 0.0
+    },
+    {
+      "frame": 410,
+      "location_error_m": 0.0,
+      "rotation_error_deg": 0.0
+    },
+    {
+      "frame": 438,
+      "location_error_m": 0.0,
+      "rotation_error_deg": 0.0
+    },
+    {
+      "frame": 480,
+      "location_error_m": 0.0,
+      "rotation_error_deg": 0.0
+    }
+  ],
+  "material_index_errors": [],
+  "material_layouts_verified": 55,
+  "embedded_texture_files": [
+    "/Users/mrk/3D-Assets/EmpyreanCamRanh/exports/Empyrean_CamRanh_Exterior_Drone.fbm/aerial_beach_01_diff_4k.jpg",
+    "/Users/mrk/3D-Assets/EmpyreanCamRanh/exports/Empyrean_CamRanh_Exterior_Drone.fbm/aerial_beach_01_nor_gl_4k.jpg",
+    "/Users/mrk/3D-Assets/EmpyreanCamRanh/exports/Empyrean_CamRanh_Exterior_Drone.fbm/aerial_beach_01_rough_4k.jpg",
+    "/Users/mrk/3D-Assets/EmpyreanCamRanh/exports/Empyrean_CamRanh_Exterior_Drone.fbm/leafy_grass_nor_gl_4k.jpg",
+    "/Users/mrk/3D-Assets/EmpyreanCamRanh/exports/Empyrean_CamRanh_Exterior_Drone.fbm/leafy_grass_rough_4k.jpg"
+  ],
+  "fps": 24
+}
