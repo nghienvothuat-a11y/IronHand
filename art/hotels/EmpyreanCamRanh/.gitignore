@@ -7,3 +7,6 @@
 /qa/*_process*.txt
 /qa/*preview*.mp4
 /qa/*.blend
+
+# Python bytecode from the v2 generator
+__pycache__/

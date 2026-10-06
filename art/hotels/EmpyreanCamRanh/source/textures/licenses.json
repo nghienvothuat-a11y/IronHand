@@ -12,6 +12,66 @@
       "author": "Charlotte Baglioni",
       "real_world_width_m": 2,
       "url": "https://polyhaven.com/a/leafy_grass"
+    },
+    {
+      "asset": "painted_plaster_wall",
+      "author": "Amal Kumar",
+      "real_world_width_m": 2.0,
+      "url": "https://polyhaven.com/a/painted_plaster_wall"
+    },
+    {
+      "asset": "beige_wall_001",
+      "author": "Dimitrios Savva, Rico Cilliers",
+      "real_world_width_m": 3.0,
+      "url": "https://polyhaven.com/a/beige_wall_001"
+    },
+    {
+      "asset": "asphalt_02",
+      "author": "Rob Tuytel",
+      "real_world_width_m": 3.000000238418579,
+      "url": "https://polyhaven.com/a/asphalt_02"
+    },
+    {
+      "asset": "concrete_pavers_02",
+      "author": "Amal Kumar",
+      "real_world_width_m": 2.0,
+      "url": "https://polyhaven.com/a/concrete_pavers_02"
+    },
+    {
+      "asset": "square_concrete_pavers",
+      "author": "Amal Kumar",
+      "real_world_width_m": 1.7999999523162842,
+      "url": "https://polyhaven.com/a/square_concrete_pavers"
+    },
+    {
+      "asset": "granite_tile",
+      "author": "Charlotte Baglioni",
+      "real_world_width_m": 2.299999952316284,
+      "url": "https://polyhaven.com/a/granite_tile"
+    },
+    {
+      "asset": "blue_floor_tiles_01",
+      "author": "Rob Tuytel",
+      "real_world_width_m": 2.0,
+      "url": "https://polyhaven.com/a/blue_floor_tiles_01"
+    },
+    {
+      "asset": "wood_floor_deck",
+      "author": "Dimitrios Savva",
+      "real_world_width_m": 1.7999999523162842,
+      "url": "https://polyhaven.com/a/wood_floor_deck"
+    },
+    {
+      "asset": "concrete_floor_02",
+      "author": "Rob Tuytel",
+      "real_world_width_m": 2.0,
+      "url": "https://polyhaven.com/a/concrete_floor_02"
+    },
+    {
+      "asset": "floor_tiles_06",
+      "author": "Rob Tuytel",
+      "real_world_width_m": 3.0,
+      "url": "https://polyhaven.com/a/floor_tiles_06"
     }
   ],
   "files": [
@@ -44,6 +104,156 @@
       "file": "leafy_grass_rough_4k.jpg",
       "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/leafy_grass/leafy_grass_rough_4k.jpg",
       "bytes": 9394969
+    },
+    {
+      "file": "painted_plaster_wall_diff_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/painted_plaster_wall/painted_plaster_wall_diff_2k.jpg",
+      "bytes": 3132937
+    },
+    {
+      "file": "painted_plaster_wall_nor_gl_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/painted_plaster_wall/painted_plaster_wall_nor_gl_2k.jpg",
+      "bytes": 4048392
+    },
+    {
+      "file": "painted_plaster_wall_rough_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/painted_plaster_wall/painted_plaster_wall_rough_2k.jpg",
+      "bytes": 1595466
+    },
+    {
+      "file": "beige_wall_001_diff_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/beige_wall_001/beige_wall_001_diff_2k.jpg",
+      "bytes": 235868
+    },
+    {
+      "file": "beige_wall_001_nor_gl_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/beige_wall_001/beige_wall_001_nor_gl_2k.jpg",
+      "bytes": 815507
+    },
+    {
+      "file": "beige_wall_001_rough_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/beige_wall_001/beige_wall_001_rough_2k.jpg",
+      "bytes": 656368
+    },
+    {
+      "file": "asphalt_02_diff_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_02/asphalt_02_diff_2k.jpg",
+      "bytes": 3075676
+    },
+    {
+      "file": "asphalt_02_nor_gl_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_02/asphalt_02_nor_gl_2k.jpg",
+      "bytes": 4943950
+    },
+    {
+      "file": "asphalt_02_rough_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_02/asphalt_02_rough_2k.jpg",
+      "bytes": 2230457
+    },
+    {
+      "file": "concrete_pavers_02_diff_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_pavers_02/concrete_pavers_02_diff_2k.jpg",
+      "bytes": 3187581
+    },
+    {
+      "file": "concrete_pavers_02_nor_gl_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_pavers_02/concrete_pavers_02_nor_gl_2k.jpg",
+      "bytes": 3353779
+    },
+    {
+      "file": "concrete_pavers_02_rough_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_pavers_02/concrete_pavers_02_rough_2k.jpg",
+      "bytes": 1639441
+    },
+    {
+      "file": "square_concrete_pavers_diff_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/square_concrete_pavers/square_concrete_pavers_diff_2k.jpg",
+      "bytes": 3272761
+    },
+    {
+      "file": "square_concrete_pavers_nor_gl_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/square_concrete_pavers/square_concrete_pavers_nor_gl_2k.jpg",
+      "bytes": 3659435
+    },
+    {
+      "file": "square_concrete_pavers_rough_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/square_concrete_pavers/square_concrete_pavers_rough_2k.jpg",
+      "bytes": 2440907
+    },
+    {
+      "file": "granite_tile_diff_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/granite_tile/granite_tile_diff_2k.jpg",
+      "bytes": 2938829
+    },
+    {
+      "file": "granite_tile_nor_gl_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/granite_tile/granite_tile_nor_gl_2k.jpg",
+      "bytes": 2486724
+    },
+    {
+      "file": "granite_tile_rough_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/granite_tile/granite_tile_rough_2k.jpg",
+      "bytes": 2738066
+    },
+    {
+      "file": "blue_floor_tiles_01_diff_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/blue_floor_tiles_01/blue_floor_tiles_01_diff_2k.jpg",
+      "bytes": 2276921
+    },
+    {
+      "file": "blue_floor_tiles_01_nor_gl_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/blue_floor_tiles_01/blue_floor_tiles_01_nor_gl_2k.jpg",
+      "bytes": 2782530
+    },
+    {
+      "file": "blue_floor_tiles_01_rough_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/blue_floor_tiles_01/blue_floor_tiles_01_rough_2k.jpg",
+      "bytes": 966978
+    },
+    {
+      "file": "wood_floor_deck_diff_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_floor_deck/wood_floor_deck_diff_2k.jpg",
+      "bytes": 3804436
+    },
+    {
+      "file": "wood_floor_deck_nor_gl_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_floor_deck/wood_floor_deck_nor_gl_2k.jpg",
+      "bytes": 3121998
+    },
+    {
+      "file": "wood_floor_deck_rough_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_floor_deck/wood_floor_deck_rough_2k.jpg",
+      "bytes": 2881541
+    },
+    {
+      "file": "concrete_floor_02_diff_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_02/concrete_floor_02_diff_2k.jpg",
+      "bytes": 3310792
+    },
+    {
+      "file": "concrete_floor_02_nor_gl_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_02/concrete_floor_02_nor_gl_2k.jpg",
+      "bytes": 935810
+    },
+    {
+      "file": "concrete_floor_02_rough_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_02/concrete_floor_02_rough_2k.jpg",
+      "bytes": 1417673
+    },
+    {
+      "file": "floor_tiles_06_diff_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/floor_tiles_06/floor_tiles_06_diff_2k.jpg",
+      "bytes": 1394898
+    },
+    {
+      "file": "floor_tiles_06_nor_gl_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/floor_tiles_06/floor_tiles_06_nor_gl_2k.jpg",
+      "bytes": 1010594
+    },
+    {
+      "file": "floor_tiles_06_rough_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/floor_tiles_06/floor_tiles_06_rough_2k.jpg",
+      "bytes": 483344
     }
   ]
 }

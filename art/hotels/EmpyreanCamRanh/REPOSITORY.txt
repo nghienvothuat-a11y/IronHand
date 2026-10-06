@@ -1,5 +1,9 @@
 EMPYREAN CAM RANH — REPOSITORY PACKAGE
 
+V2 (06/10/2026): source/Empyrean_CamRanh_Exterior_v2.blend dựng lại toàn bộ theo
+feedback (mesh kín, cửa lõm, số tầng thật, mặt bằng đo trên ảnh vệ tinh, texture PBR).
+Xem README_V2.txt. Các file v1 bên dưới được giữ nguyên để so sánh.
+
 This folder is a snapshot of the exterior hotel project and delivered drone clip.
 Open source/Empyrean_CamRanh_Exterior.blend for the static scene, or
 source/Empyrean_CamRanh_Drone_20s.blend for the animated camera.

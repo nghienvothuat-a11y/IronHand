@@ -1,0 +1,7895 @@
+{
+ "summary": {
+  "towers": {
+   "Light": {
+    "bays": 71,
+    "floors": 18,
+    "min_floors": 4,
+    "windows": 2638,
+    "height_m": 70.95
+   },
+   "Sea": {
+    "bays": 72,
+    "floors": 20,
+    "min_floors": 4,
+    "windows": 2746,
+    "height_m": 78.05
+   },
+   "Sand": {
+    "bays": 70,
+    "floors": 8,
+    "min_floors": 4,
+    "windows": 1394,
+    "height_m": 32.1
+   },
+   "Wind": {
+    "bays": 69,
+    "floors": 8,
+    "min_floors": 4,
+    "windows": 1372,
+    "height_m": 32.1
+   }
+  },
+  "villas": {
+   "twin_blocks": 68,
+   "units": 136
+  },
+  "site": {
+   "asphalt": 29,
+   "paving": 66,
+   "lawn": 104,
+   "scrub": 241,
+   "pools": 12,
+   "skipped_self_intersecting": {},
+   "markings": 317,
+   "arena": {
+    "checker_cells": 640
+   }
+  },
+  "planting": {
+   "plants": 3338,
+   "by_template": {
+    "00_coconut_palm_a": 298,
+    "01_coconut_palm_b": 162,
+    "02_coconut_palm_c": 178,
+    "03_clump_palm": 123,
+    "04_broadleaf_tree": 77,
+    "05_broadleaf_tree_b": 222,
+    "06_garden_shrub": 815,
+    "07_dune_scrub": 1463
+   }
+  },
+  "props": {
+   "street_lamps": 228,
+   "pool_loungers": 155,
+   "shade_sails": 2,
+   "benches": 32,
+   "flagpoles": 12,
+   "beach_parasols": 96,
+   "cars": 67,
+   "fan_pavilion_ribs": 15
+  },
+  "cameras": [
+   "01_Aerial_from_land",
+   "02_Sea_facing_aerial",
+   "03_Sea_court_pool",
+   "04_Shopvilla_street",
+   "05_Arena_Square",
+   "06_North_sea_aerial",
+   "07_Light_entrance",
+   "08_Sand_water_park",
+   "09_Masterplan_top"
+  ],
+  "geometry": {
+   "objects": 975,
+   "verts": 885047,
+   "faces": 731175,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0
+  },
+  "non_manifold_objects": [],
+  "build_seconds": 6.0
+ },
+ "objects": [
+  {
+   "name": "EMP2_Arena_Ali_and_Nino_statue",
+   "verts": 288,
+   "faces": 202,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Arena_grandstand_steps",
+   "verts": 1984,
+   "faces": 1024,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Arena_Square_checker_paving",
+   "verts": 5120,
+   "faces": 3840,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Arena_water_music_stage",
+   "verts": 416,
+   "faces": 284,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Ballroom_roof_grid",
+   "verts": 8,
+   "faces": 6,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Ballroom_Solis",
+   "verts": 352,
+   "faces": 290,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Ballroom_Window_frames",
+   "verts": 1568,
+   "faces": 1176,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.001",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.002",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.003",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.004",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.005",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.006",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.007",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.008",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.009",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.010",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.011",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.012",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.013",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.014",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.015",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.016",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.017",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.018",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.019",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.020",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.021",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.022",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.023",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.024",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.025",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.026",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.027",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.028",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.029",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.030",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.031",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.032",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.033",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.034",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.035",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.036",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.037",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.038",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.039",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.040",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.041",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.042",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.043",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.044",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.045",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.046",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.047",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.048",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.049",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.050",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.051",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.052",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.053",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.054",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.055",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.056",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.057",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.058",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.059",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.060",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.061",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.062",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.063",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.064",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.065",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.066",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.067",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.068",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.069",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.070",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.071",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.072",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.073",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.074",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.075",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.076",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.077",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.078",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.079",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.080",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.081",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.082",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.083",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.084",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.085",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.086",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.087",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.088",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.089",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.090",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.091",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.092",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.093",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.094",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.095",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.096",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.097",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.098",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.099",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.100",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.101",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.102",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.103",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.104",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.105",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.106",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.107",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.108",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.109",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.110",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.111",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.112",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.113",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.114",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.115",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.116",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.117",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.118",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.119",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.120",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.121",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.122",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.123",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.124",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.125",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.126",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.127",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.128",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.129",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.130",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.131",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.132",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.133",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.134",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.135",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.136",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.137",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.138",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.139",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.140",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.141",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.142",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.143",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.144",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.145",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.146",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.147",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.148",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.149",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.150",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.151",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.152",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.153",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.154",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.155",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.156",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.157",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.158",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.159",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.160",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.161",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.162",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.163",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.164",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.165",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.166",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.167",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.168",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.169",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.170",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.171",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.172",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.173",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.174",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.175",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.176",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.177",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.178",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.179",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.180",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.181",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.182",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.183",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.184",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.185",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.186",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.187",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.188",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.189",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.190",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_lounger.191",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.001",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.002",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.003",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.004",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.005",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.006",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.007",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.008",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.009",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.010",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.011",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.012",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.013",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.014",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.015",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.016",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.017",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.018",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.019",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.020",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.021",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.022",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.023",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.024",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.025",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.026",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.027",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.028",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.029",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.030",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.031",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.032",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.033",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.034",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.035",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.036",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.037",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.038",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.039",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.040",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.041",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.042",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.043",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.044",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.045",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.046",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.047",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.048",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.049",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.050",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.051",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.052",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.053",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.054",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.055",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.056",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.057",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.058",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.059",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.060",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.061",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.062",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.063",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.064",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.065",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.066",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.067",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.068",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.069",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.070",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.071",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.072",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.073",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.074",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.075",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.076",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.077",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.078",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.079",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.080",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.081",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.082",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.083",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.084",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.085",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.086",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.087",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.088",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.089",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.090",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.091",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.092",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.093",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.094",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.095",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Beach_parasol.096",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.001",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.002",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.003",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.004",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.005",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.006",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.007",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.008",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.009",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.010",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.011",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.012",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.013",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.014",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.015",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.016",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.017",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.018",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.019",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.020",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.021",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.022",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.023",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.024",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.025",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.026",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.027",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.028",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.029",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.030",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.031",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Bench.032",
+   "verts": 32,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.001",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.002",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.003",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.004",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.005",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.006",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.007",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.008",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.009",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.010",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.011",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.012",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.013",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.014",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.015",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.016",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.017",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.018",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.019",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.020",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.021",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.022",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.023",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.024",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.025",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.026",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.027",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.028",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.029",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.030",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.031",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.032",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.033",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.034",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.035",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.036",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.037",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.038",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.039",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.040",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.041",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.042",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.043",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.044",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.045",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.046",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.047",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.048",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.049",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.050",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.051",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.052",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.053",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.054",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.055",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.056",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.057",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.058",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.059",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.060",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.061",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.062",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.063",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.064",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.065",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.066",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Car.067",
+   "verts": 112,
+   "faces": 68,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Flagpole",
+   "verts": 52,
+   "faces": 32,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Flagpole.001",
+   "verts": 52,
+   "faces": 32,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Flagpole.002",
+   "verts": 52,
+   "faces": 32,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Flagpole.003",
+   "verts": 52,
+   "faces": 32,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Flagpole.004",
+   "verts": 52,
+   "faces": 32,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Flagpole.005",
+   "verts": 52,
+   "faces": 32,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Flagpole.006",
+   "verts": 52,
+   "faces": 32,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Flagpole.007",
+   "verts": 52,
+   "faces": 32,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Flagpole.008",
+   "verts": 52,
+   "faces": 32,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Flagpole.009",
+   "verts": 52,
+   "faces": 32,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Flagpole.010",
+   "verts": 52,
+   "faces": 32,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Flagpole.011",
+   "verts": 52,
+   "faces": 32,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Flagpole.012",
+   "verts": 52,
+   "faces": 32,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Garden_shade_sails",
+   "verts": 484,
+   "faces": 416,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Ground_asphalt",
+   "verts": 10368,
+   "faces": 15600,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Ground_lawn",
+   "verts": 10680,
+   "faces": 15816,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Ground_parcel_base",
+   "verts": 1602,
+   "faces": 2443,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Ground_paving",
+   "verts": 10300,
+   "faces": 15730,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Ground_scrub",
+   "verts": 15478,
+   "faces": 22417,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Ground_terrain_sand",
+   "verts": 28,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Lagoon_deep_basin",
+   "verts": 24,
+   "faces": 24,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Lagoon_floor",
+   "verts": 400,
+   "faces": 600,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Light_Balustrades",
+   "verts": 6824,
+   "faces": 5118,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Light_Canopy_columns",
+   "verts": 64,
+   "faces": 36,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Light_Entrance_canopy",
+   "verts": 8,
+   "faces": 6,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Light_Handrails",
+   "verts": 6824,
+   "faces": 5118,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Light_Lobby_podium_Shell",
+   "verts": 320,
+   "faces": 290,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Light_Lobby_podium_Window_frames",
+   "verts": 1536,
+   "faces": 1152,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Light_Mosaic_bands",
+   "verts": 4736,
+   "faces": 4668,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Light_Name_monolith",
+   "verts": 8,
+   "faces": 6,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Light_Roof_level",
+   "verts": 68,
+   "faces": 36,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Light_Roof_parapets",
+   "verts": 824,
+   "faces": 618,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Light_Rooftop_plant",
+   "verts": 432,
+   "faces": 324,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Light_Solar_arrays",
+   "verts": 104,
+   "faces": 78,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Light_Terrace_balustrades",
+   "verts": 1216,
+   "faces": 912,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Light_Terrace_handrails",
+   "verts": 1216,
+   "faces": 912,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Light_Tower_shell",
+   "verts": 24681,
+   "faces": 24459,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Light_Window_frames",
+   "verts": 123224,
+   "faces": 92418,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Plant_00_coconut_palm_a",
+   "verts": 7294,
+   "faces": 6466,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Plant_01_coconut_palm_b",
+   "verts": 7294,
+   "faces": 6466,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Plant_02_coconut_palm_c",
+   "verts": 7294,
+   "faces": 6466,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Plant_03_clump_palm",
+   "verts": 5958,
+   "faces": 4974,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Plant_04_broadleaf_tree",
+   "verts": 1176,
+   "faces": 2138,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Plant_05_broadleaf_tree_b",
+   "verts": 1176,
+   "faces": 2138,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Plant_06_garden_shrub",
+   "verts": 294,
+   "faces": 560,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Plant_07_dune_scrub",
+   "verts": 294,
+   "faces": 560,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Plants_scatter",
+   "verts": 3338,
+   "faces": 0,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_basins",
+   "verts": 4632,
+   "faces": 5230,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_coping",
+   "verts": 3348,
+   "faces": 3348,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.001",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.002",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.003",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.004",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.005",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.006",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.007",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.008",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.009",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.010",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.011",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.012",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.013",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.014",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.015",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.016",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.017",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.018",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.019",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.020",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.021",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.022",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.023",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.024",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.025",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.026",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.027",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.028",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.029",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.030",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.031",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.032",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.033",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.034",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.035",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.036",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.037",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.038",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.039",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.040",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.041",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.042",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.043",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.044",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.045",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.046",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.047",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.048",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.049",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.050",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.051",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.052",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.053",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.054",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.055",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.056",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.057",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.058",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.059",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.060",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.061",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.062",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.063",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.064",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.065",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.066",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.067",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.068",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.069",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.070",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.071",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.072",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.073",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.074",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.075",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.076",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.077",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.078",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.079",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.080",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.081",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.082",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.083",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.084",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.085",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.086",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.087",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.088",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.089",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.090",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.091",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.092",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.093",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.094",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.095",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.096",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.097",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.098",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.099",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.100",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.101",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.102",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.103",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.104",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.105",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.106",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.107",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.108",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.109",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.110",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.111",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.112",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.113",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.114",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.115",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.116",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.117",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.118",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.119",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.120",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.121",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.122",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.123",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.124",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.125",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.126",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.127",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.128",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.129",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.130",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.131",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.132",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.133",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.134",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.135",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.136",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.137",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.138",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.139",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.140",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.141",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.142",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.143",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.144",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.145",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.146",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.147",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.148",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.149",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.150",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.151",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.152",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.153",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.154",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_lounger.155",
+   "verts": 56,
+   "faces": 42,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.001",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.002",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.003",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.004",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.005",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.006",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.007",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.008",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.009",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.010",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.011",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.012",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.013",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.014",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.015",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.016",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.017",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.018",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.019",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.020",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.021",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.022",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.023",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.024",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.025",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.026",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.027",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.028",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.029",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.030",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.031",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.032",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.033",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.034",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.035",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.036",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.037",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.038",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.039",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.040",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.041",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.042",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.043",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.044",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.045",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.046",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.047",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.048",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.049",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.050",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.051",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.052",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.053",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.054",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.055",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.056",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.057",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.058",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.059",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.060",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.061",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.062",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.063",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.064",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.065",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.066",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.067",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.068",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.069",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.070",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.071",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.072",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.073",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.074",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.075",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.076",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_parasol.077",
+   "verts": 48,
+   "faces": 28,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Pool_water",
+   "verts": 1682,
+   "faces": 2471,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Road_markings",
+   "verts": 2536,
+   "faces": 1902,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sand_Balustrades",
+   "verts": 3584,
+   "faces": 2688,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sand_Canopy_columns",
+   "verts": 64,
+   "faces": 36,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sand_Entrance_canopy",
+   "verts": 8,
+   "faces": 6,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sand_fan_pavilion_frames",
+   "verts": 1200,
+   "faces": 900,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sand_fan_pavilion_roof",
+   "verts": 336,
+   "faces": 252,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sand_Handrails",
+   "verts": 3584,
+   "faces": 2688,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sand_Lobby_podium_Shell",
+   "verts": 280,
+   "faces": 254,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sand_Lobby_podium_Window_frames",
+   "verts": 1344,
+   "faces": 1008,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sand_Mosaic_bands",
+   "verts": 2808,
+   "faces": 2780,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sand_Name_monolith",
+   "verts": 8,
+   "faces": 6,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sand_Roof_level",
+   "verts": 60,
+   "faces": 32,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sand_Roof_parapets",
+   "verts": 1336,
+   "faces": 1002,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sand_Rooftop_plant",
+   "verts": 1200,
+   "faces": 900,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sand_Solar_arrays",
+   "verts": 296,
+   "faces": 222,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sand_Terrace_balustrades",
+   "verts": 512,
+   "faces": 384,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sand_Terrace_handrails",
+   "verts": 512,
+   "faces": 384,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sand_Tower_shell",
+   "verts": 13158,
+   "faces": 13030,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sand_Window_frames",
+   "verts": 66680,
+   "faces": 50010,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sea_Balustrades",
+   "verts": 7288,
+   "faces": 5466,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sea_Canopy_columns",
+   "verts": 64,
+   "faces": 36,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sea_Entrance_canopy",
+   "verts": 8,
+   "faces": 6,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sea_Handrails",
+   "verts": 7288,
+   "faces": 5466,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sea_Lobby_podium_Shell",
+   "verts": 280,
+   "faces": 254,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sea_Lobby_podium_Window_frames",
+   "verts": 1344,
+   "faces": 1008,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sea_Mosaic_bands",
+   "verts": 5264,
+   "faces": 5188,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sea_Name_monolith",
+   "verts": 8,
+   "faces": 6,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sea_Roof_level",
+   "verts": 60,
+   "faces": 32,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sea_Roof_parapets",
+   "verts": 696,
+   "faces": 522,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sea_Rooftop_plant",
+   "verts": 336,
+   "faces": 252,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sea_Solar_arrays",
+   "verts": 80,
+   "faces": 60,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sea_surface",
+   "verts": 22,
+   "faces": 29,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sea_Terrace_balustrades",
+   "verts": 1392,
+   "faces": 1044,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sea_Terrace_handrails",
+   "verts": 1392,
+   "faces": 1044,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sea_Tower_shell",
+   "verts": 25708,
+   "faces": 25497,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Sea_Window_frames",
+   "verts": 127992,
+   "faces": 95994,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Service_block",
+   "verts": 8,
+   "faces": 6,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Shopvilla_balcony_glass",
+   "verts": 2176,
+   "faces": 1632,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Shopvilla_balcony_slabs",
+   "verts": 2176,
+   "faces": 1632,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Shopvilla_blocks",
+   "verts": 28056,
+   "faces": 26678,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Shopvilla_handrails",
+   "verts": 2176,
+   "faces": 1632,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Shopvilla_lane_planters",
+   "verts": 800,
+   "faces": 600,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Shopvilla_planter_soil",
+   "verts": 800,
+   "faces": 600,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Shopvilla_roof_parapets_and_pavilions",
+   "verts": 3264,
+   "faces": 2448,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Shopvillas_Balustrades",
+   "verts": 12640,
+   "faces": 9480,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Shopvillas_Handrails",
+   "verts": 12640,
+   "faces": 9480,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Shopvillas_Window_frames",
+   "verts": 119360,
+   "faces": 89520,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.001",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.002",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.003",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.004",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.005",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.006",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.007",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.008",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.009",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.010",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.011",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.012",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.013",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.014",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.015",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.016",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.017",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.018",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.019",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.020",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.021",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.022",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.023",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.024",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.025",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.026",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.027",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.028",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.029",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.030",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.031",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.032",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.033",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.034",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.035",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.036",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.037",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.038",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.039",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.040",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.041",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.042",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.043",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.044",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.045",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.046",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.047",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.048",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.049",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.050",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.051",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.052",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.053",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.054",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.055",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.056",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.057",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.058",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.059",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.060",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.061",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.062",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.063",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.064",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.065",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.066",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.067",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.068",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.069",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.070",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.071",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.072",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.073",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.074",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.075",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.076",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.077",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.078",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.079",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.080",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.081",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.082",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.083",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.084",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.085",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.086",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.087",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.088",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.089",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.090",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.091",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.092",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.093",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.094",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.095",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.096",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.097",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.098",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.099",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.100",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.101",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.102",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.103",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.104",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.105",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.106",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.107",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.108",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.109",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.110",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.111",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.112",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.113",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.114",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.115",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.116",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.117",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.118",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.119",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.120",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.121",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.122",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.123",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.124",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.125",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.126",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.127",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.128",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.129",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.130",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.131",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.132",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.133",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.134",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.135",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.136",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.137",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.138",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.139",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.140",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.141",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.142",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.143",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.144",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.145",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.146",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.147",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.148",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.149",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.150",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.151",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.152",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.153",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.154",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.155",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.156",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.157",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.158",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.159",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.160",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.161",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.162",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.163",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.164",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.165",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.166",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.167",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.168",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.169",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.170",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.171",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.172",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.173",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.174",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.175",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.176",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.177",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.178",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.179",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.180",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.181",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.182",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.183",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.184",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.185",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.186",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.187",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.188",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.189",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.190",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.191",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.192",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.193",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.194",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.195",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.196",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.197",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.198",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.199",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.200",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.201",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.202",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.203",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.204",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.205",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.206",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.207",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.208",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.209",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.210",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.211",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.212",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.213",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.214",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.215",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.216",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.217",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.218",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.219",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.220",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.221",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.222",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.223",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.224",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.225",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.226",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.227",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Street_lamp.228",
+   "verts": 68,
+   "faces": 44,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_West_lagoon_edge",
+   "verts": 320,
+   "faces": 320,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_West_lagoon_water",
+   "verts": 160,
+   "faces": 236,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Wind_Balustrades",
+   "verts": 3544,
+   "faces": 2658,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Wind_Canopy_columns",
+   "verts": 64,
+   "faces": 36,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Wind_Entrance_canopy",
+   "verts": 8,
+   "faces": 6,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Wind_Handrails",
+   "verts": 3544,
+   "faces": 2658,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Wind_Lobby_podium_Shell",
+   "verts": 360,
+   "faces": 326,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Wind_Lobby_podium_Window_frames",
+   "verts": 1728,
+   "faces": 1296,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Wind_Mosaic_bands",
+   "verts": 2544,
+   "faces": 2516,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Wind_Name_monolith",
+   "verts": 8,
+   "faces": 6,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Wind_Roof_level",
+   "verts": 76,
+   "faces": 40,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Wind_Roof_parapets",
+   "verts": 1304,
+   "faces": 978,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Wind_Rooftop_plant",
+   "verts": 1072,
+   "faces": 804,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Wind_Solar_arrays",
+   "verts": 264,
+   "faces": 198,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Wind_Terrace_balustrades",
+   "verts": 488,
+   "faces": 366,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Wind_Terrace_handrails",
+   "verts": 488,
+   "faces": 366,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Wind_Tower_shell",
+   "verts": 12918,
+   "faces": 12797,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  },
+  {
+   "name": "EMP2_Wind_Window_frames",
+   "verts": 65560,
+   "faces": 49170,
+   "boundary_edges": 0,
+   "non_manifold_edges": 0,
+   "wire_edges": 0
+  }
+ ]
+}
